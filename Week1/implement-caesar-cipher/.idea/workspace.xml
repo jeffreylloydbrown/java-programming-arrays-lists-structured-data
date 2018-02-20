@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/implement_caesar_cipher$WordPlayTest.coverage" NAME="WordPlayTest Coverage Results" MODIFIED="1519107939341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/implement_caesar_cipher$WordPlayTest.coverage" NAME="WordPlayTest Coverage Results" MODIFIED="1519109292186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -22,13 +22,11 @@
       <file leaf-file-name="WordPlay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordPlay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="61" />
+            <state relative-caret-position="140">
+              <caret line="49" column="76" lean-forward="true" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
               <folding>
                 <element signature="e#710#711#0" expanded="true" />
                 <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#2507#2508#0" expanded="true" />
-                <element signature="e#2536#2537#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,8 +35,8 @@
       <file leaf-file-name="WordPlayTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/WordPlayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="366">
+              <caret line="37" column="62" lean-forward="false" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -68,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -225,19 +223,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 14m 48s.xml">
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 41m 08s.xml">
       <configuration name="WordPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 16m 53s.xml">
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 42m 28s.xml">
       <configuration name="WordPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 20m 56s.xml">
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 43m 26s.xml">
       <configuration name="WordPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 25m 35s.xml">
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 43m 41s.xml">
       <configuration name="WordPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 25m 42s.xml">
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 44m 24s.xml">
+      <configuration name="WordPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 44m 59s.xml">
+      <configuration name="WordPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 45m 46s.xml">
+      <configuration name="WordPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 46m 11s.xml">
+      <configuration name="WordPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 48m 08s.xml">
+      <configuration name="WordPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordPlayTest - 2018.02.20 at 00h 48m 14s.xml">
       <configuration name="WordPlayTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -251,7 +264,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="702" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="702" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -301,21 +314,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordPlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="61" />
+        <state relative-caret-position="140">
+          <caret line="49" column="76" lean-forward="true" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
           <folding>
             <element signature="e#710#711#0" expanded="true" />
             <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#2507#2508#0" expanded="true" />
-            <element signature="e#2536#2537#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/WordPlayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="366">
+          <caret line="37" column="62" lean-forward="false" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
           <folding />
         </state>
       </provider>

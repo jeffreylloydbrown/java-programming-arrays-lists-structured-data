@@ -40,6 +40,11 @@ public class WordPlay {
         return sb.toString();
     }
 
+    private char toLower (char ch) { return Character.toLowerCase(ch); }
+    private char toUpper (char ch) { return Character.toUpperCase(ch); }
+
+    private char replacement (int pos) { return (pos % 2 == 0) ? '*' : '+'; }
+
     /** Write a method emphasize with two parameters, a String named phrase and
      *  a character named ch. This method should return a String that is the
      *  string phrase but with the Char ch (upper- or lowercase) replaced by
@@ -59,6 +64,12 @@ public class WordPlay {
      * @return
      */
     public String emphasize (String phrase, char ch) {
-        return "TODO";
+        StringBuilder sb = new StringBuilder(phrase);
+        for (int k = 0; k < phrase.length(); k++)
+            if (toLower(sb.charAt(k)) == toLower(ch) ||
+                    toUpper(sb.charAt(k)) == toUpper(ch)) {
+                sb.setCharAt(k, replacement(k));
+            }
+        return sb.toString();
     }
 }
