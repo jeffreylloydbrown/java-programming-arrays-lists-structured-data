@@ -21,6 +21,8 @@ public class WordPlay {
         return "aeiouAEIOU".contains(Character.toString(ch));
     }
 
+    private boolean hasValue (String s) { return s != null && ! s.isEmpty(); }
+
     /** Write a method replaceVowels that has two parameters, a String named phrase
      *  and a Char named ch. This method should return a String that is the string
      *  phrase with all the vowels (uppercase or lowercase) replaced by ch. For
@@ -33,6 +35,7 @@ public class WordPlay {
      * @return
      */
     public String replaceVowels (String phrase, char ch) {
+        if (! hasValue(phrase)) return "";
         StringBuilder sb = new StringBuilder(phrase);
         for (int k = 0; k < phrase.length(); k++)
             if (isVowel(sb.charAt(k)))
@@ -64,6 +67,7 @@ public class WordPlay {
      * @return
      */
     public String emphasize (String phrase, char ch) {
+        if (! hasValue(phrase)) return "";
         StringBuilder sb = new StringBuilder(phrase);
         for (int k = 0; k < phrase.length(); k++)
             if (toLower(sb.charAt(k)) == toLower(ch) ||
