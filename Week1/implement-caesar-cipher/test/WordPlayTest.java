@@ -24,6 +24,8 @@ class WordPlayTest {
 
     @Test
     void replaceVowels() {
+        WordPlay w = new WordPlay();
+        assertTrue(w.replaceVowels("Hello World", '*').equals("H*ll* W*rld"));
     }
 
     @Test

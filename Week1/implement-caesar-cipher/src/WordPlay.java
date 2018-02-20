@@ -33,7 +33,11 @@ public class WordPlay {
      * @return
      */
     public String replaceVowels (String phrase, char ch) {
-        return "TODO";
+        StringBuilder sb = new StringBuilder(phrase);
+        for (int k = 0; k < phrase.length(); k++)
+            if (isVowel(sb.charAt(k)))
+                sb.setCharAt(k, ch);
+        return sb.toString();
     }
 
     /** Write a method emphasize with two parameters, a String named phrase and
