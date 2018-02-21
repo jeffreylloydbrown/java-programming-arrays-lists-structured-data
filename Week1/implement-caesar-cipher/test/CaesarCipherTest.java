@@ -69,7 +69,12 @@ class CaesarCipherTest {
         encrypted = cc.encrypt(message, key);
         String reEncrypted = cc.encrypt(encrypted, 26-key);
         assertTrue(message.equals(reEncrypted), "symmetric encrypt -> not encrypted");
+    }
 
+    @Test
+    void practiceQuiz () {
+        System.out.println("5.  "+cc.encrypt("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!", 15));
+        System.out.println("6.  "+cc.encryptTwoKeys("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!", 8, 21));
     }
 
 }
