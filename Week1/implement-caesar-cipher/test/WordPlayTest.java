@@ -25,7 +25,7 @@ class WordPlayTest {
 
     @Test
     void replaceVowels() {
-        assertTrue(w.replaceVowels("Hello World", '*').equals("H*ll* W*rld"), "case 1");
+        assertTrue(w.replaceVowels("HellO World", '*').equals("H*ll* W*rld"), "case 1");
         assertTrue(w.replaceVowels("b", '*').equals("b"), "case 2");
         assertTrue(w.replaceVowels("", '*').equals(""), "case 3");
         assertTrue(w.replaceVowels(null, '#').equals(""), "case 4");
