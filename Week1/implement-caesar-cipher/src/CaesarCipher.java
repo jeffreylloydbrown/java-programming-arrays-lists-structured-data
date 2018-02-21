@@ -7,6 +7,12 @@ import edu.duke.*;
  */
 public class CaesarCipher {
 
+    private String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    // A test to make sure a string has something in it, since I will be
+    // doing that test in every method that accepts a string.
+    private boolean hasValue (String s) { return s != null && ! s.isEmpty(); }
+
     /** Write the method encrypt that has two parameters, a String named
      *  `input` and an int named `key`. This method returns a String that
      *  has been encrypted using the Caesar Cipher algorithm explained in
@@ -18,7 +24,25 @@ public class CaesarCipher {
      * @return the encrypted version of `input` using `key`.
      */
     public String encrypt (String input, int key) {
-        return "TODO";
+        // parameter checks.  input has something in it,
+        // and key isn't zero (which would mean "don't rotate the letters"
+        if (! hasValue(input)) return "";
+        if (key == 0) return input;
+
+        // Do the work.
+        StringBuilder encrypted = new StringBuilder(input);
+        String shiftedAlphabet = alphabet.substring(key) + alphabet.substring(0, key);
+
+        for (int i = 0; i < encrypted.length(); i++) {
+            char currChar = encrypted.charAt(i);
+            int idx = alphabet.indexOf(currChar);
+            if (idx != -1) {
+                char newChar = shiftedAlphabet.charAt(idx);
+                encrypted.setCharAt(i, newChar);
+            }
+        }
+
+        return encrypted.toString();
     }
 
     /** Write the method encryptTwoKeys that has three parameters, a String
@@ -35,6 +59,11 @@ public class CaesarCipher {
      * @return  the encrypted version of `input` that is harder to crack
      */
     public String encryptTwoKeys (String input, int key1, int key2) {
+        // parameter checks.  If input has nothing, or both keys
+        // are zero, we have no work to do.
+        if (!hasValue(input)) return "";
+        if (key1 == 0 && key2 == 0) return input;
+
         return "TODO";
     }
 

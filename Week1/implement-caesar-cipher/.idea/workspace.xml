@@ -19,46 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WordPlay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WordPlay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="67" column="52" lean-forward="false" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CaesarCipher.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CaesarCipher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-              <folding>
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-                <element signature="e#1714#1715#0" expanded="true" />
-                <element signature="e#1743#1744#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CaesarCipherTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/CaesarCipherTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="889">
-              <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+            <state relative-caret-position="185">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordPlayTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/WordPlayTest.java">
+      <file leaf-file-name="CaesarCipherTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/CaesarCipherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="-219">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,8 +60,8 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/test/WordPlayTest.java" />
         <option value="$PROJECT_DIR$/src/WordPlay.java" />
-        <option value="$PROJECT_DIR$/src/CaesarCipher.java" />
         <option value="$PROJECT_DIR$/test/CaesarCipherTest.java" />
+        <option value="$PROJECT_DIR$/src/CaesarCipher.java" />
       </list>
     </option>
   </component>
@@ -133,9 +108,9 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,35 +244,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CaesarCipherTest - 2018.02.20 at 20h 59m 36s.xml">
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 43m 22s.xml">
       <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 48m 14s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 43m 51s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 49m 50s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 44m 50s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 52m 06s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 46m 30s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 00h 52m 11s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 47m 45s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 20h 25m 02s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 48m 18s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 20h 25m 07s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 48m 49s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 20h 26m 54s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 49m 12s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 20h 27m 03s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 49m 42s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordPlayTest - 2018.02.20 at 20h 59m 14s.xml">
-      <configuration name="WordPlayTest" configurationId="JUnit" />
+    <history-entry file="CaesarCipherTest - 2018.02.20 at 21h 51m 52s.xml">
+      <configuration name="CaesarCipherTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -321,13 +296,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -339,6 +313,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -350,6 +325,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CaesarCipherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WordPlay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -383,23 +374,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
+    <entry file="file://$PROJECT_DIR$/test/CaesarCipherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
-            <element signature="e#1743#1744#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-219">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CaesarCipherTest.java">
+    <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="889">
-          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        <state relative-caret-position="185">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
