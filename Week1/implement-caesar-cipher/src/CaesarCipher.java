@@ -7,7 +7,13 @@ import edu.duke.*;
  */
 public class CaesarCipher {
 
+    // The source alphabet used by all routines.
     private String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    // Encapsulate the key shift since it will get done in several places.
+    private String shiftAlphabet(int key) {
+        return alphabet.substring(key) + alphabet.substring(0, key);
+    }
 
     // A test to make sure a string has something in it, since I will be
     // doing that test in every method that accepts a string.
@@ -29,13 +35,17 @@ public class CaesarCipher {
         if (! hasValue(input)) return "";
         if (key == 0) return input;
 
-        // Do the work.
+        // Start with a StringBuilder we can update below.
         StringBuilder encrypted = new StringBuilder(input);
-        String shiftedAlphabet = alphabet.substring(key) + alphabet.substring(0, key);
-
+        // Support both cases by creating a shifted alphabet of each, then
+        // combining together.
+        String myAlphabet = alphabet.toUpperCase() + alphabet.toLowerCase();
+        String shiftedAlphabet = shiftAlphabet(key).toUpperCase() +
+                                 shiftAlphabet(key).toLowerCase();
+        // Walk the input string and transform each letter that exists in
         for (int i = 0; i < encrypted.length(); i++) {
             char currChar = encrypted.charAt(i);
-            int idx = alphabet.indexOf(currChar);
+            int idx = myAlphabet.indexOf(currChar);
             if (idx != -1) {
                 char newChar = shiftedAlphabet.charAt(idx);
                 encrypted.setCharAt(i, newChar);
