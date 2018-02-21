@@ -84,6 +84,7 @@ public class CaesarCipher {
         String shifted2 = shiftAlphabet(key2).toUpperCase() +
                 shiftAlphabet(key2).toLowerCase();
         // Walk the input string and transform each letter that exists in
+        // our alphabet
         for (int i = 0; i < encrypted.length(); i++) {
             char currChar = encrypted.charAt(i);
             int idx = myAlphabet.indexOf(currChar);
