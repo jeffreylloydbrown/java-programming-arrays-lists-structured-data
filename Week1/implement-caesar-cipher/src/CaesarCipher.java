@@ -74,7 +74,28 @@ public class CaesarCipher {
         if (!hasValue(input)) return "";
         if (key1 == 0 && key2 == 0) return input;
 
-        return "TODO";
+        // Start with a StringBuilder we can update below.
+        StringBuilder encrypted = new StringBuilder(input);
+        // Support both cases by creating a shifted alphabet of each, then
+        // combining together.
+        String myAlphabet = alphabet.toUpperCase() + alphabet.toLowerCase();
+        String shifted1 = shiftAlphabet(key1).toUpperCase() +
+                shiftAlphabet(key1).toLowerCase();
+        String shifted2 = shiftAlphabet(key2).toUpperCase() +
+                shiftAlphabet(key2).toLowerCase();
+        // Walk the input string and transform each letter that exists in
+        for (int i = 0; i < encrypted.length(); i++) {
+            char currChar = encrypted.charAt(i);
+            int idx = myAlphabet.indexOf(currChar);
+            if (idx != -1) {
+                // Which alphabet do I use?  even i is key1, odd i is key2
+                String shiftedAlphabet = (i % 2 == 0) ? shifted1: shifted2;
+                char newChar = shiftedAlphabet.charAt(idx);
+                encrypted.setCharAt(i, newChar);
+            }
+        }
+
+        return encrypted.toString();
     }
 
 }  // CaesarCipher

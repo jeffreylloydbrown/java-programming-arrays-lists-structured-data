@@ -35,25 +35,29 @@ class CaesarCipherTest {
 
     @Test
     void encryptTwoKeys() {
-        String encrypted;
+        String encrypted, reEncrypted;
 
         encrypted = cc.encryptTwoKeys(null, 23, 17);
         assertTrue(encrypted.equals(""), "null case");
         encrypted = cc.encryptTwoKeys("", 23, 17);
         assertTrue(encrypted.equals(""), "empty string case");
-/*
+
         encrypted = cc.encryptTwoKeys("First Legion", 23, 17);
         assertTrue(encrypted.equals("Czojq Ivdzle"), "case from Assignment");
-*/
-        String message = "Should be unchanged";
+
+        String message = "Should Be Unchanged";
         encrypted = cc.encryptTwoKeys(message, 0, 0);
         assertTrue(encrypted.equals(message), "case that no rotation is unencrypted");
+
+        encrypted = cc.encryptTwoKeys(message, 23, 17);
+        reEncrypted = cc.encryptTwoKeys(encrypted, 26-23, 26-17);
+        assertTrue(message.equals(reEncrypted), "case of symmetric double encryption -> not encrypted");
     }
-/*
+
     @Test
     void testCaesar () {
         String encrypted;
-        FileResource fr = new FileResource();
+        FileResource fr = new FileResource("simple-message.txt");
         String message = fr.asString();
         System.out.println("message: '" + message + "'");
         System.out.println("key is 0, should match message");
@@ -61,10 +65,11 @@ class CaesarCipherTest {
         System.out.println("  "+encrypted);
         assertTrue(encrypted.equals(message), "case of 0 rotation so unencrypted");
 
-        for (int key = 10; key < 16; key++) {
-            encrypted = cc.encrypt(message, key);
-            System.out.println("key is " + key + "\n" + "  " + encrypted);
-        }
+        int key = 12;
+        encrypted = cc.encrypt(message, key);
+        String reEncrypted = cc.encrypt(encrypted, 26-key);
+        assertTrue(message.equals(reEncrypted), "symmetric encrypt -> not encrypted");
+
     }
-*/
+
 }
