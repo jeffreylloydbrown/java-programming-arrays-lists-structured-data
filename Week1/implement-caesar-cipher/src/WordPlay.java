@@ -30,9 +30,9 @@ public class WordPlay {
      *  “H*ll* W*rld”. Be sure to call the method isVowel that you wrote and also
      *  test this method.
      *
-     * @param phrase
-     * @param ch
-     * @return
+     * @param phrase    the phrase that will get its vowels replaced
+     * @param ch        the character to replace the vowels with
+     * @return          the original string but with all vowels replaced by `ch`.
      */
     public String replaceVowels (String phrase, char ch) {
         if (! hasValue(phrase)) return "";
@@ -62,9 +62,10 @@ public class WordPlay {
      * string “dn* ctg+*+ctg+”, and the call emphasize(“Mary Bella Abracadabra”, ‘a’)
      * would return the string “M+ry Bell+ +br*c*d*br+”. Be sure to test this method.
      *
-     * @param phrase
-     * @param ch
-     * @return
+     * @param phrase    the string being processed.
+     * @param ch        the character in `phrase` to replace
+     * @return          the original string but with all instances of `ch`
+     * replaced with either '*' or '+' as described.
      */
     public String emphasize (String phrase, char ch) {
         if (! hasValue(phrase)) return "";
