@@ -20,6 +20,27 @@ class TestCaesarCipher {
         assertEquals(message, broken);
     }
 
+    private void qps (String label, String value) {
+        System.out.println(label+" '"+value+"'");
+    }
+
+    @Test
+    void finalQuiz () {
+        String q1msg = "Can you imagine life WITHOUT the internet AND computers in your pocket?";
+        qps("Q1.", new CaesarCipher(15).encrypt(q1msg));
+
+        WordLengths w = new WordLengths();
+        FileResource errors = new FileResource("test/data/errors.txt");
+        int[] counts = new int[200];
+        w.countWordLengths(errors, counts);
+        qps("Q4.", ""+w.indexOfMax(counts));
+
+        FileResource manywords = new FileResource("test/data/manywords.txt");
+        int[] manyCounts = new int[200];
+        w.countWordLengths(manywords, manyCounts);
+        qps("Q5.", ""+w.indexOfMax(manyCounts));
+    }
+
     private String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
     private int ALPHABET_LENGTH = ALPHABET.length();
     private int LETTER_E_POSITION = ALPHABET.indexOf('e');

@@ -40,6 +40,29 @@ class TestCaesarCipherTwo {
         assertEquals(message, broken);
     }
 
+    private void qps (String label, String value) {
+        System.out.println(label+" '"+value+"'");
+    }
+
+    @Test
+    void finalQuiz() {
+        String q2msg = "Can you imagine life WITHOUT the internet AND computers in your pocket?";
+        qps("Q2.", new CaesarCipherTwo(21,8).encrypt(q2msg));
+
+        String encrypted = "Hfs cpwewloj loks cd Hoto kyg Cyy.";
+        CaesarCipherTwo q6 = new CaesarCipherTwo(14, 24);
+        qps("Q6.", q6.decrypt(encrypted));
+
+        encrypted = "Aal uttx hm aal Qtct Fhljha pl Wbdl. Pvxvxlx!";
+        qps("Q7.", breakCaesarCipher(encrypted));
+
+        FileResource q8 = new FileResource("test/data/mysteryTwoKeysQuiz.txt");
+        System.out.println("keys printed are for question 9");
+        String decrypted = breakCaesarCipher(q8.asString());
+        System.out.println("question 8 wants only first 5 words");
+        qps("Q8.", decrypted.substring(0,80));
+    }
+
     private String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
     private int ALPHABET_LENGTH = ALPHABET.length();
     private int LETTER_E_POSITION = ALPHABET.indexOf('e');
@@ -139,6 +162,8 @@ class TestCaesarCipherTwo {
         // adjust those tests.
         int key1 = keyOffset(getKey(oddChars));
         int key2 = keyOffset(getKey(evenChars));
+
+        System.out.println("key1 = "+key1+", key2 = "+key2);
 
         // Decrypt using CaesarCipher with those keys.
         return new CaesarCipherTwo(key1, key2).decrypt(input);
