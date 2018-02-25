@@ -15,6 +15,9 @@ class CaesarBreakerTest {
         String result = breaker.decrypt(cipher.encrypt(msg, 14));
         assertEquals(msg, result, "empty message");
 
+        result = breaker.decrypt(cipher.encrypt(null, 14));
+        assertEquals("", result, "used null message");
+
         msg = "Just a bunch of eeeeeeeeeeeeeeeeeeeees!";
         result = breaker.decrypt(cipher.encrypt(msg, 14));
         assertEquals(msg, result, msg);
@@ -36,6 +39,21 @@ class CaesarBreakerTest {
         String msg = "abeeeeeeeeeeeeed";
         String result = breaker.decrypt(cipher.encrypt(msg, 9));
         assertEquals(msg, result);
+    }
+
+    @Test
+    void halfOfString() {
+
+    }
+
+    @Test
+    void getKey() {
+
+    }
+
+    @Test
+    void decryptTwoKeys() {
+        
     }
 
 }

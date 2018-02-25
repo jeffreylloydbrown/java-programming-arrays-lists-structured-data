@@ -14,28 +14,48 @@
     <SUITE FILE_PATH="coverage/breaking_caesar_cipher$WordLengthsTest.coverage" NAME="WordLengthsTest Coverage Results" MODIFIED="1519522363027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>WordLengths</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/breaking_caesar_cipher$CaesarBreakerTest.coverage" NAME="CaesarBreakerTest Coverage Results" MODIFIED="1519525103865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/breaking_caesar_cipher$CaesarBreakerTest.coverage" NAME="CaesarBreakerTest Coverage Results" MODIFIED="1519525365636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>CaesarBreaker</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/breaking_caesar_cipher$CaesarBreakerTest_decrypt.coverage" NAME="CaesarBreakerTest.decrypt Coverage Results" MODIFIED="1519525353751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CaesarBreaker</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/breaking_caesar_cipher$WordLengthsTest_indexOfMax.coverage" NAME="WordLengthsTest.indexOfMax Coverage Results" MODIFIED="1519522297383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CaesarBreaker.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CaesarBreaker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CaesarBreaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="462">
+              <caret line="100" column="23" lean-forward="false" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
+              <folding>
+                <element signature="e#3702#3703#0" expanded="true" />
+                <element signature="e#3731#3732#0" expanded="true" />
+                <element signature="e#4001#4002#0" expanded="true" />
+                <element signature="e#4026#4027#0" expanded="true" />
+                <element signature="e#4580#4581#0" expanded="true" />
+                <element signature="e#4609#4610#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaesarCipher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-283">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CaesarBreakerTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CaesarBreakerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/CaesarBreakerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="498">
+              <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -374,19 +394,13 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CaesarBreakerTest - 2018.02.24 at 20h 11m 26s.xml">
-      <configuration name="CaesarBreakerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CaesarBreakerTest - 2018.02.24 at 20h 11m 52s.xml">
-      <configuration name="CaesarBreakerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CaesarBreakerTest - 2018.02.24 at 20h 14m 41s.xml">
-      <configuration name="CaesarBreakerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CaesarBreakerTest - 2018.02.24 at 20h 18m 20s.xml">
       <configuration name="CaesarBreakerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CaesarBreakerTest - 2018.02.24 at 20h 18m 25s.xml">
+      <configuration name="CaesarBreakerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CaesarBreakerTest - 2018.02.24 at 20h 22m 47s.xml">
       <configuration name="CaesarBreakerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CaesarBreakerTest_decrypt - 2018.02.24 at 20h 16m 12s.xml">
@@ -404,6 +418,12 @@
     <history-entry file="CaesarBreakerTest_decrypt - 2018.02.24 at 20h 18m 11s.xml">
       <configuration name="CaesarBreakerTest.decrypt" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CaesarBreakerTest_decrypt - 2018.02.24 at 20h 22m 18s.xml">
+      <configuration name="CaesarBreakerTest.decrypt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CaesarBreakerTest_decrypt - 2018.02.24 at 20h 22m 35s.xml">
+      <configuration name="CaesarBreakerTest.decrypt" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -418,8 +438,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -474,18 +494,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CaesarBreakerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="-283">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CaesarBreaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="462">
+          <caret line="100" column="23" lean-forward="false" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
+          <folding>
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3731#3732#0" expanded="true" />
+            <element signature="e#4001#4002#0" expanded="true" />
+            <element signature="e#4026#4027#0" expanded="true" />
+            <element signature="e#4580#4581#0" expanded="true" />
+            <element signature="e#4609#4610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CaesarBreakerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding />
         </state>
       </provider>

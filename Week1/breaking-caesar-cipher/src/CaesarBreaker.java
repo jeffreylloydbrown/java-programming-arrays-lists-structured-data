@@ -61,4 +61,46 @@ public class CaesarBreaker {
         }
         return cc.encrypt(encrypted, ALPHABET.length()-dkey);
     }
+
+    // Returns true if the string has actual content.
+    private boolean hasValue (String s) { return s != null && s.length() != 0; }
+
+    /** Return every other character in `message` starting at position `start`.
+     *
+     * For example, `halfOfString("Hello", 0)` returns `"Hlo"`, and
+     * `halfOfString("Hello", 1)` returns `"el"`.
+     *
+     * @param message   The text to process.
+     * @param start     The first character in `message` to return.
+     * @return every other character in `message`.  If `start` is
+     * outside of `message`, returns an empty string.  If `message`
+     * is empty, also return an empty string.
+     */
+    public String halfOfString (String message, int start) {
+        return "TODO";
+    }
+
+    /** Given a string `s`, compute the encryption key assuming `e`
+     * is the most frequent letter in `s`.
+     *
+     * @param s     A piece of text.
+     * @return the likely encryption key.  If `s` is empty, return -1.
+     */
+    public int getKey (String s) {
+        return -1;
+    }
+
+    /** Given a string `encrypted` that was encrypted with the two keys
+     * algorithm discussed in the previous lesson, attempt to determine
+     * the two keys used to encrypt the message, print the two keys, and
+     * return the decrypted message using those two keys.
+     *
+     * @param encrypted     An encrypted message from
+     *                      CaesarCipher.encryptTwoKeys().
+     * @return the decrypted message.  If `encrypted` is empty, returns
+     * an empty string.
+     */
+    public String decryptTwoKeys (String encrypted) {
+        return "TODO";
+    }
 }
