@@ -130,4 +130,17 @@ class WordLengthsTest {
         assertEquals(3, w.indexOfMax(hamletCounts));
     }
 
+    @Test
+    void practiceQuizAnswers() {
+        FileResource fr = new FileResource("src/data/romeo.txt");
+        int[] counts = new int[200];    // I'm positive no English word is 199 chars long
+        w.countWordLengths(fr, counts);
+        System.out.println("Question 4: "+w.indexOfMax(counts));
+
+        FileResource question5 = new FileResource("src/data/lotsOfWords.txt");
+        int[] q5counts = new int[200];
+        w.countWordLengths(question5, q5counts);
+        System.out.println("Question 5: "+w.indexOfMax(q5counts));
+    }
+
 }
