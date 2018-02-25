@@ -140,15 +140,8 @@ class TestCaesarCipherTwo {
         int key1 = keyOffset(getKey(oddChars));
         int key2 = keyOffset(getKey(evenChars));
 
-        // We're told to print the keys found.
-        System.out.println("key1 = "+key1+", key2 = "+key2);
-
-        // Decrypt using CaesarCipher with the inverse keys.
-        return new CaesarCipherTwo(ALPHABET_LENGTH-key1, ALPHABET_LENGTH-key2).encrypt(input);
-    }
-
-    @Test
-    void practiceQuizAnswers() {
+        // Decrypt using CaesarCipher with those keys.
+        return new CaesarCipherTwo(key1, key2).decrypt(input);
     }
 
     private void ps(String label, String value) {

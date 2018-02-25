@@ -3,6 +3,23 @@ import edu.duke.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TestCaesarCipher {
+
+    @Test
+    public void simpleTests () {
+        String message = new FileResource("test/data/wordsLotsOfEs.txt").asString();
+        CaesarCipher cipher = new CaesarCipher(18);
+        ps("message", message);
+        String encrypted = cipher.encrypt(message);
+        ps("encrypted", encrypted);
+        String decrypted = cipher.decrypt(encrypted);
+        ps("decrypted", decrypted);
+        assertEquals(message, decrypted);
+        System.out.println("now breaking it...");
+        String broken = breakCaesarCipher(encrypted);
+        ps("broke encrypt", broken);
+        assertEquals(message, broken);
+    }
+
     private String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
     private int ALPHABET_LENGTH = ALPHABET.length();
     private int LETTER_E_POSITION = ALPHABET.indexOf('e');
@@ -37,26 +54,6 @@ class TestCaesarCipher {
         //System.out.println(label+": '"+value+"'");
     }
 
-    private String check (String expected, String actual) {
-        return expected.equals(actual) ? "Pass" : "FAIL";
-    }
-
-    @Test
-    public void simpleTests () {
-        String message = new FileResource("test/data/wordsLotsOfEs.txt").asString();
-        CaesarCipher cipher = new CaesarCipher(18);
-        ps("message", message);
-        String encrypted = cipher.encrypt(message);
-        ps("encrypted", encrypted);
-        String decrypted = cipher.decrypt(encrypted);
-        ps("decrypted", decrypted);
-        assertEquals(message, decrypted);
-        System.out.println("now breaking it...");
-        String broken = breakCaesarCipher(encrypted);
-        ps("broke encrypt", broken);
-        assertEquals(message, broken);
-    }
-
     // keyOffset() applies the 'e' assumption to the passed in value,
     // which is supposed to be the most frequent letter seen in a piece
     // of text.
@@ -73,12 +70,11 @@ class TestCaesarCipher {
     }
 
     private String breakCaesarCipher (String input) {
-        WordLengths w = new WordLengths();
         int[] freqs = countLetters(input);
         int maxIndex = maxIndex(freqs);
         int dkey = keyOffset(maxIndex);
-        CaesarCipher cc = new CaesarCipher(ALPHABET_LENGTH-dkey);
-        return cc.encrypt(input);
+        CaesarCipher cc = new CaesarCipher(dkey);
+        return cc.decrypt(input);
     }
 
 }  // TestCaesarCipher
