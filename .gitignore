@@ -1,2 +1,10 @@
 
 *.class
+
+*.ctxt
+
+*\out\*
+Week1/breaking-caesar-cipher/out/production/breaking-caesar-cipher/data/empty.txt
+Week1/breaking-caesar-cipher/out/production/breaking-caesar-cipher/empty.txt
+Week1/breaking-caesar-cipher/out/production/breaking-caesar-cipher/data/smallHamlet.txt
+Week1/breaking-caesar-cipher/out/production/breaking-caesar-cipher/smallHamlet.txt
