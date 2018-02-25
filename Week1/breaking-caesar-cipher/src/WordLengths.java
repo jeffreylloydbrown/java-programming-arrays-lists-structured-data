@@ -55,10 +55,11 @@ public class WordLengths {
 
             // Now figure out where to put `len`.  Remember if len > last spot in
             // `count`, we bump the final spot in `counts`.  It is also possible
-            // that `len` is < 0, if the word is small and there are no letters in it!
+            // that `len` is <= 0, if the word is small and there are no letters in it!
+            // And a word must have a non-zero length at this point to be counted.
             if (len > lastIndex)
                 counts[lastIndex]++;
-            else if (len >= 0)
+            else if (len > 0)
                 counts[len]++;
         }
     }
