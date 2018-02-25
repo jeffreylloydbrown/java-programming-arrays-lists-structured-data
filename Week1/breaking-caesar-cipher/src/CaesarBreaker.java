@@ -94,7 +94,7 @@ public class CaesarBreaker {
      * @return the likely encryption key.  If `s` is empty, return -1.
      */
     public int getKey (String s) {
-        return -1;
+        return hasValue(s) ? maxIndex(countLetters(s)) : -1;
     }
 
     /** Given a string `encrypted` that was encrypted with the two keys

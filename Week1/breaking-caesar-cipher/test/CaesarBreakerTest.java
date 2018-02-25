@@ -62,7 +62,17 @@ class CaesarBreakerTest {
 
     @Test
     void getKey() {
+        // degenerate cases
+        assertEquals(-1, breaker.getKey(null), "null message is -1 for key");
+        assertEquals(-1, breaker.getKey(""), "empty message is -1 for key");
 
+        // simplest real message.
+        assertEquals(4, breaker.getKey("e"), "\"e\" returns 4");
+        assertEquals(16, breaker.getKey("q"), "\"q\" returns 16");
+
+        // longer messages.
+        assertEquals( 0, breaker.getKey("aaabbccc"), "\"aaabbccc\" returns 0");
+        assertEquals(2, breaker.getKey("abbccc"), "\"abbccc\" returns 2");
     }
 
     @Test
