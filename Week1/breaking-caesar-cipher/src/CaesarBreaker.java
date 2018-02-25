@@ -26,9 +26,11 @@
 public class CaesarBreaker {
 
     private String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+    private int ALPHABET_LENGTH = ALPHABET.length();
+    private int LETTER_E_POSITION = ALPHABET.indexOf('e');
 
     public int[] countLetters (String message) {
-        int[] counts = new int[ALPHABET.length()];
+        int[] counts = new int[ALPHABET_LENGTH];
         for (int k = 0; k < message.length(); k++) {
             char ch = Character.toLowerCase(message.charAt(k));
             int index = ALPHABET.indexOf(ch);
@@ -47,19 +49,34 @@ public class CaesarBreaker {
         return w.indexOfMax(values);
     }
 
+    // keyOffset() applies the 'e' assumption to the passed in value,
+    // which is supposed to be the most frequent letter seen in a piece
+    // of text.
+    private int keyOffset(int value) {
+        int key = value - LETTER_E_POSITION;
+        // This is so much more clear, but I'm going to follow
+        // the lesson code.
+        //
+        // if (key < 0)
+        //    key += ALPHABET_LENGTH;
+        if (value < LETTER_E_POSITION)
+            key = ALPHABET_LENGTH - (LETTER_E_POSITION - value);
+        return key;
+    }
+
     public String decrypt (String encrypted) {
         CaesarCipher cc = new CaesarCipher();
         WordLengths w = new WordLengths();
         int[] freqs = countLetters(encrypted);
         int maxIndex = maxIndex(freqs);
-        int LETTER_E_POSITION = ALPHABET.indexOf('e');
-        int dkey = maxIndex - LETTER_E_POSITION;
+        //int dkey = maxIndex - LETTER_E_POSITION;
         // if the maximum index is less than where 'e' is, we have
         // to wrap round to get the the decrypt key.
-        if (maxIndex < LETTER_E_POSITION) {
-            dkey = ALPHABET.length() - (LETTER_E_POSITION - maxIndex);
-        }
-        return cc.encrypt(encrypted, ALPHABET.length()-dkey);
+        //if (maxIndex < LETTER_E_POSITION) {
+        //    dkey = ALPHABET_LENGTH - (LETTER_E_POSITION - maxIndex);
+        //}
+        int dkey = keyOffset(maxIndex);
+        return cc.encrypt(encrypted, ALPHABET_LENGTH-dkey);
     }
 
     // Returns true if the string has actual content.
@@ -108,6 +125,30 @@ public class CaesarBreaker {
      * an empty string.
      */
     public String decryptTwoKeys (String encrypted) {
-        return "TODO";
+        if (! hasValue(encrypted)) return "";
+
+        // Calculate string of every other character in `encrypted`
+        String oddChars = halfOfString(encrypted, 0);
+        String evenChars = halfOfString(encrypted, 1);
+        ps("oddChars", oddChars);
+        ps("evenChars", evenChars);
+
+        // Calculate a key used for each of those.
+        // If the getKey() question on the practice quiz is wrong,
+        // then keyOffset() goes INSIDE getKey() and I have to
+        // adjust those tests.
+        int key1 = keyOffset(getKey(oddChars));
+        int key2 = keyOffset(getKey(evenChars));
+
+        // We're told to print the keys found.
+        System.out.println("key1 = "+key1+", key2 = "+key2);
+
+        // Decrypt using CaesarCipher with the inverse keys.
+        return new CaesarCipher().encryptTwoKeys(encrypted, ALPHABET_LENGTH-key1, ALPHABET_LENGTH-key2);
     }
-}
+
+    private void ps(String label, String value) {
+        //System.out.println(label+" :'"+value+"'");
+    }
+
+}  // CaesarBreaker

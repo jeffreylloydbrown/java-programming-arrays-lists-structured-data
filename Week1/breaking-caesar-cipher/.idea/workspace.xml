@@ -11,10 +11,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/breaking_caesar_cipher$WordLengthsTest.coverage" NAME="WordLengthsTest Coverage Results" MODIFIED="1519522363027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/breaking_caesar_cipher$WordLengthsTest.coverage" NAME="WordLengthsTest Coverage Results" MODIFIED="1519535251526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>WordLengths</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/breaking_caesar_cipher$CaesarBreakerTest.coverage" NAME="CaesarBreakerTest Coverage Results" MODIFIED="1519527675709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/breaking_caesar_cipher$CaesarBreakerTest.coverage" NAME="CaesarBreakerTest Coverage Results" MODIFIED="1519535278694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CaesarBreaker</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/breaking_caesar_cipher$CaesarBreakerTest_decrypt.coverage" NAME="CaesarBreakerTest.decrypt Coverage Results" MODIFIED="1519525353751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -30,26 +30,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CaesarBreaker.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CaesarBreaker.java">
+      <file leaf-file-name="WordLengths.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WordLengths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-              <folding>
-                <element signature="e#4319#4320#0" expanded="true" />
-                <element signature="e#4873#4874#0" expanded="true" />
-                <element signature="e#4902#4903#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="58" column="82" lean-forward="false" selection-start-line="58" selection-start-column="82" selection-end-line="58" selection-end-column="82" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CaesarCipher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
+      <file leaf-file-name="CaesarBreaker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CaesarBreaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-283">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="612">
+              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordLengthsTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/WordLengthsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2363">
+              <caret line="142" column="66" lean-forward="false" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +65,8 @@
       <file leaf-file-name="CaesarBreakerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CaesarBreakerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="74" column="74" lean-forward="false" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
+            <state relative-caret-position="357">
+              <caret line="98" column="99" lean-forward="false" selection-start-line="98" selection-start-column="99" selection-end-line="98" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -83,10 +91,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Dice.java" />
-        <option value="$PROJECT_DIR$/src/WordLengths.java" />
-        <option value="$PROJECT_DIR$/test/WordLengthsTest.java" />
         <option value="$PROJECT_DIR$/src/CaesarBreaker.java" />
+        <option value="$PROJECT_DIR$/test/WordLengthsTest.java" />
         <option value="$PROJECT_DIR$/test/CaesarBreakerTest.java" />
+        <option value="$PROJECT_DIR$/src/WordLengths.java" />
       </list>
     </option>
   </component>
@@ -111,8 +119,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,6 +132,11 @@
               <item name="breaking-caesar-cipher" type="b2602c69:ProjectViewProjectNode" />
               <item name="breaking-caesar-cipher" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="breaking-caesar-cipher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="breaking-caesar-cipher" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -137,7 +150,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_121/jre/lib/ext/courserajava.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../implement-caesar-cipher/test/CaesarCipherTest.java" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
   </component>
   <component name="RecentsManager">
@@ -186,7 +199,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CaesarBreakerTest.decrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CaesarBreakerTest.decryptTwoKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="CaesarBreaker" />
@@ -198,7 +211,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CaesarBreakerTest" />
-      <option name="METHOD_NAME" value="decrypt" />
+      <option name="METHOD_NAME" value="decryptTwoKeys" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
@@ -211,7 +224,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CaesarBreakerTest.getKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CaesarBreakerTest.practiceQuizAnswers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="CaesarBreaker" />
@@ -223,7 +236,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CaesarBreakerTest" />
-      <option name="METHOD_NAME" value="getKey" />
+      <option name="METHOD_NAME" value="practiceQuizAnswers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
@@ -236,32 +249,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CaesarBreakerTest.halfOfString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="CaesarBreaker" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="breaking-caesar-cipher" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CaesarBreakerTest" />
-      <option name="METHOD_NAME" value="halfOfString" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="WordLengthsTest.testCountWordLengths" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordLengthsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="WordLengths" />
@@ -273,7 +261,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WordLengthsTest" />
-      <option name="METHOD_NAME" value="testCountWordLengths" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="WordLengthsTest.practiceQuizAnswers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="WordLengths" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="breaking-caesar-cipher" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="WordLengthsTest" />
+      <option name="METHOD_NAME" value="practiceQuizAnswers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
@@ -367,19 +380,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.WordLengthsTest.testCountWordLengths" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.decrypt" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.halfOfString" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.getKey" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.decryptTwoKeys" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.WordLengthsTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WordLengthsTest.practiceQuizAnswers" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.practiceQuizAnswers" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.getKey" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.halfOfString" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.decrypt" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.WordLengthsTest.testCountWordLengths" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WordLengthsTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.practiceQuizAnswers" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.WordLengthsTest.practiceQuizAnswers" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CaesarBreakerTest.decryptTwoKeys" />
       </list>
     </recent_temporary>
   </component>
@@ -402,40 +415,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CaesarBreakerTest - 2018.02.24 at 21h 01m 17s.xml">
+    <history-entry file="CaesarBreakerTest - 2018.02.24 at 23h 07m 53s.xml">
       <configuration name="CaesarBreakerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 20h 54m 04s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="CaesarBreakerTest - 2018.02.24 at 23h 08m 00s.xml">
+      <configuration name="CaesarBreakerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 20h 55m 17s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="CaesarBreakerTest_practiceQuizAnswers - 2018.02.24 at 22h 51m 17s.xml">
+      <configuration name="CaesarBreakerTest.practiceQuizAnswers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 20h 56m 52s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="CaesarBreakerTest_practiceQuizAnswers - 2018.02.24 at 22h 54m 43s.xml">
+      <configuration name="CaesarBreakerTest.practiceQuizAnswers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 20h 57m 15s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="CaesarBreakerTest_practiceQuizAnswers - 2018.02.24 at 22h 55m 15s.xml">
+      <configuration name="CaesarBreakerTest.practiceQuizAnswers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 20h 57m 41s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="CaesarBreakerTest_practiceQuizAnswers - 2018.02.24 at 22h 55m 50s.xml">
+      <configuration name="CaesarBreakerTest.practiceQuizAnswers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 20h 57m 53s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="CaesarBreakerTest_practiceQuizAnswers - 2018.02.24 at 22h 57m 10s.xml">
+      <configuration name="CaesarBreakerTest.practiceQuizAnswers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 20h 59m 04s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="CaesarBreakerTest_practiceQuizAnswers - 2018.02.24 at 22h 57m 32s.xml">
+      <configuration name="CaesarBreakerTest.practiceQuizAnswers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 21h 00m 22s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="WordLengthsTest - 2018.02.24 at 23h 07m 22s.xml">
+      <configuration name="WordLengthsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CaesarBreakerTest_getKey - 2018.02.24 at 21h 01m 03s.xml">
-      <configuration name="CaesarBreakerTest.getKey" configurationId="JUnit" />
+    <history-entry file="WordLengthsTest - 2018.02.24 at 23h 07m 33s.xml">
+      <configuration name="WordLengthsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -445,19 +457,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -476,32 +488,41 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Dice.java">
+    <entry file="file://$PROJECT_DIR$/src/WordLengths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="1020">
+          <caret line="60" column="30" lean-forward="false" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WordLengths.java">
+    <entry file="file://$PROJECT_DIR$/src/CaesarBreaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="69" column="12" lean-forward="false" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+        <state relative-caret-position="612">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/WordLengthsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="105" column="68" lean-forward="true" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="68" />
+        <state relative-caret-position="2414">
+          <caret line="142" column="66" lean-forward="false" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/CaesarBreakerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dice.java" />
     <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-283">
@@ -510,23 +531,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CaesarBreakerTest.java">
+    <entry file="file://$PROJECT_DIR$/../implement-caesar-cipher/test/CaesarCipherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="74" column="74" lean-forward="false" selection-start-line="74" selection-start-column="74" selection-end-line="74" selection-end-column="74" />
-          <folding />
+        <state relative-caret-position="238">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/WordLengthsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="142" column="66" lean-forward="false" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CaesarBreaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="e#4319#4320#0" expanded="true" />
-            <element signature="e#4873#4874#0" expanded="true" />
-            <element signature="e#4902#4903#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CaesarBreakerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="98" column="99" lean-forward="false" selection-start-line="98" selection-start-column="99" selection-end-line="98" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WordLengths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="58" column="82" lean-forward="false" selection-start-line="58" selection-start-column="82" selection-end-line="58" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
