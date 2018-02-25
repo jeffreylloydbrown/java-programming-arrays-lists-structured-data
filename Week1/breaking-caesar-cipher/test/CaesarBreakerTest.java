@@ -43,7 +43,21 @@ class CaesarBreakerTest {
 
     @Test
     void halfOfString() {
+        // degenerate cases
+        assertEquals("", breaker.halfOfString(null, 1), "null message");
+        assertEquals("", breaker.halfOfString("", 1), "empty message");
 
+        // case from the assignment
+        String msg = "Qbkm Zgis";
+        String expected_0 = "Qk gs";
+        String expected_1 = "bmZi";
+        assertEquals(expected_0, breaker.halfOfString(msg, 0), "starting at 0");
+        assertEquals(expected_1, breaker.halfOfString(msg, 1), "starting at 1");
+
+        // simplest real message.
+        msg = "a";
+        assertEquals("a", breaker.halfOfString(msg, 0), "\"a\" starting at 0");
+        assertEquals("", breaker.halfOfString(msg, 1), "\"a\" starting at 1");
     }
 
     @Test
@@ -53,7 +67,7 @@ class CaesarBreakerTest {
 
     @Test
     void decryptTwoKeys() {
-        
+
     }
 
 }

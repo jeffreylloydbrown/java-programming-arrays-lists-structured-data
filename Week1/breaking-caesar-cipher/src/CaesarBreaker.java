@@ -77,7 +77,14 @@ public class CaesarBreaker {
      * is empty, also return an empty string.
      */
     public String halfOfString (String message, int start) {
-        return "TODO";
+        if (! hasValue(message)) return "";
+
+        StringBuilder sb = new StringBuilder("");
+        int messageLen = message.length();
+        for (int k = start; k < messageLen; k += 2) {
+            sb.append(message.charAt(k));
+        }
+        return sb.toString();
     }
 
     /** Given a string `s`, compute the encryption key assuming `e`
