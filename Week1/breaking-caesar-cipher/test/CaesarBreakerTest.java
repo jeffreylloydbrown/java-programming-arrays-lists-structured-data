@@ -77,7 +77,29 @@ class CaesarBreakerTest {
 
     @Test
     void decryptTwoKeys() {
+        // degenerate cases
+        assertEquals("", breaker.decryptTwoKeys(null), "null message");
+        assertEquals("", breaker.decryptTwoKeys(""), "empty message");
 
+        String lotsOfEs = "Just a test string with lots of eeeeeeeeeeeeeeeees";
+        String encrypted = cipher.encryptTwoKeys(lotsOfEs, 23, 2);
+        assertEquals(lotsOfEs, breaker.decryptTwoKeys(encrypted), "test case from assignment");
+    }
+
+    @Test
+    void practiceQuizAnswers() {
+        String msg = "Top ncmy qkff vi vguv vbg ycpx";
+        System.out.println("question 8: '"+cipher.encryptTwoKeys(msg, 26-2, 26-20)+"'");
+
+        String encrypted = "Akag tjw Xibhr awoa aoee xakex znxag xwko";
+        System.out.println("question 9: '"+breaker.decryptTwoKeys(encrypted)+"'");
+
+        FileResource question10 = new FileResource("src/data/mysteryTwoKeysPractice.txt");
+        encrypted = question10.asString();
+        System.out.println("question 10 is first 5 words below, question 11 are the following keys:");
+        msg = breaker.decryptTwoKeys(encrypted);
+        // Only need the first five words, don't care to parse them out.
+        System.out.println("   '"+msg.substring(0, 80)+"'");
     }
 
 }
