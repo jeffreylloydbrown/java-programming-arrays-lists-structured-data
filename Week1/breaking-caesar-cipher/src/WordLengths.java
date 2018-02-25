@@ -54,10 +54,11 @@ public class WordLengths {
             if (! Character.isLetter(word.charAt(wordLen-1))) len -= 1;
 
             // Now figure out where to put `len`.  Remember if len > last spot in
-            // `count`, we bump the final spot in `counts`.
+            // `count`, we bump the final spot in `counts`.  It is also possible
+            // that `len` is < 0, if the word is small and there are no letters in it!
             if (len > lastIndex)
                 counts[lastIndex]++;
-            else
+            else if (len >= 0)
                 counts[len]++;
         }
     }

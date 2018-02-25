@@ -75,6 +75,18 @@ class WordLengthsTest {
         assertArrayEquals(expected, counts);
     }
 
+    // Test with a single word of a single character that is not a letter.
+    @Test
+    void noLettersInString() {
+        FileResource fr = new FileResource("src/data/noletters.txt");
+        int[] counts = new int[4];
+        int[] expected = {0, 0, 0, 0};
+
+        w.countWordLengths(fr, counts);
+
+        assertArrayEquals(expected, counts);
+    }
+
     //
     @Test
     void indexOfMax() {
