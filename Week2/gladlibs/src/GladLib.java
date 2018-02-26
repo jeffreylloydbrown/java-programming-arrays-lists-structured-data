@@ -128,7 +128,7 @@ public class GladLib {
 	
 	public void makeStory(){
 	    System.out.println("\n");
-		String story = fromTemplate("data/madtemplate.txt");
+		String story = fromTemplate("src/data/madtemplate.txt");
 		printOut(story, 60);
 	}
 	
