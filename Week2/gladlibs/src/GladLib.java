@@ -11,6 +11,8 @@ public class GladLib {
 	private ArrayList<String> timeList;
 	private ArrayList<String> verbList;
 	private ArrayList<String> fruitList;
+
+	private ArrayList<String> usedWords;
 	
 	private Random myRandom;
 	
@@ -19,11 +21,13 @@ public class GladLib {
 	
 	public GladLib(){
 		initializeFromSource(dataSourceDirectory);
+		usedWords = new ArrayList<String>();
 		myRandom = new Random();
 	}
 	
 	public GladLib(String source){
 		initializeFromSource(source);
+		usedWords = new ArrayList<String>();
 		myRandom = new Random();
 	}
 	
@@ -87,6 +91,21 @@ public class GladLib {
 		String prefix = w.substring(0,first);
 		String suffix = w.substring(last+1);
 		String sub = getSubstitute(w.substring(first+1,last));
+		// Make sure we haven't seen sub before.  If we have,
+		// make up to 20 attempts to get a different word.
+		// If we run out at that point, we will allow the duplicate.
+		int attempts = 1;
+		while (attempts <= 20) {
+			if (usedWords.contains(sub)) {
+				// sub already used, attempt to get a replacement.
+				sub = getSubstitute(w.substring(first + 1, last));
+				attempts += 1;
+			} else {
+				// not found, remember it and exit loop.
+				usedWords.add(sub);
+				break;
+			}
+		}
 		return prefix+sub+suffix;
 	}
 	
@@ -137,9 +156,11 @@ public class GladLib {
 	}
 	
 	public void makeStory(){
+		usedWords.clear();
 	    System.out.println("\n");
 		String story = fromTemplate("src/data/madtemplate2.txt");
 		printOut(story, 60);
+		System.out.println("\n\nReplaced "+usedWords.size()+" words.");
 	}
 	
 

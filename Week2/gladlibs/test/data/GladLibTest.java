@@ -9,4 +9,10 @@ class GladLibTest {
         gl.makeStory();
     }
 
+    @Test
+    void useDataLong() {
+        GladLib gl = new GladLib("src/datalong");
+        gl.makeStory();
+    }
+
 }
