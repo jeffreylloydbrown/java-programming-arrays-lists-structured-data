@@ -20,11 +20,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WordFrequencies.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordFrequencies.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordFrequencies.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
               <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharactersInPlay.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CharactersInPlay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharactersInPlayTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/CharactersInPlayTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="2" column="49" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="2" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -60,6 +82,8 @@
       <list>
         <option value="$PROJECT_DIR$/test/WordFrequenciesTest.java" />
         <option value="$PROJECT_DIR$/src/WordFrequencies.java" />
+        <option value="$PROJECT_DIR$/test/CharactersInPlayTest.java" />
+        <option value="$PROJECT_DIR$/src/CharactersInPlay.java" />
       </list>
     </option>
   </component>
@@ -95,6 +119,11 @@
               <item name="random-story" type="b2602c69:ProjectViewProjectNode" />
               <item name="random-story" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="random-story" type="b2602c69:ProjectViewProjectNode" />
+              <item name="random-story" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -128,7 +157,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WordFrequenciesTest.runTester">
+  <component name="RunManager" selected="JUnit.CharactersInPlayTest">
+    <configuration name="CharactersInPlayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="random-story" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CharactersInPlayTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="WordFrequenciesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -259,14 +308,16 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest.runTester" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CharactersInPlayTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest.runTester" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CharactersInPlayTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest.runTester" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -289,35 +340,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordFrequenciesTest - 2018.02.25 at 18h 10m 46s.xml">
-      <configuration name="WordFrequenciesTest" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 20m 05s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest - 2018.02.25 at 18h 11m 19s.xml">
-      <configuration name="WordFrequenciesTest" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 20m 53s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest - 2018.02.25 at 18h 11m 44s.xml">
-      <configuration name="WordFrequenciesTest" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 23m 42s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest - 2018.02.25 at 18h 12m 53s.xml">
-      <configuration name="WordFrequenciesTest" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 24m 54s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest - 2018.02.25 at 18h 13m 12s.xml">
-      <configuration name="WordFrequenciesTest" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 25m 33s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest - 2018.02.25 at 18h 16m 53s.xml">
-      <configuration name="WordFrequenciesTest" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 26m 57s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest_runTester - 2018.02.25 at 18h 47m 30s.xml">
-      <configuration name="WordFrequenciesTest.runTester" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 27m 35s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest_runTester - 2018.02.25 at 18h 47m 50s.xml">
-      <configuration name="WordFrequenciesTest.runTester" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 28m 18s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest_runTester - 2018.02.25 at 18h 48m 46s.xml">
-      <configuration name="WordFrequenciesTest.runTester" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 28m 53s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WordFrequenciesTest_runTester - 2018.02.25 at 18h 51m 36s.xml">
-      <configuration name="WordFrequenciesTest.runTester" configurationId="JUnit" />
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 29m 59s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -382,6 +433,24 @@
         <state relative-caret-position="149">
           <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CharactersInPlayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CharactersInPlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
