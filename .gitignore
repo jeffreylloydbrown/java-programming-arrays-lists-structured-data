@@ -33,3 +33,7 @@ Week1/object-oriented-caesar-cipher/out/test/object-oriented-caesar-cipher/data/
 Week1/object-oriented-caesar-cipher/out/test/object-oriented-caesar-cipher/data/errors.txt
 Week1/object-oriented-caesar-cipher/out/test/object-oriented-caesar-cipher/manywords.txt
 Week2/random-story/out/test/random-story/data/romeo.txt.lnk
+Week2/random-story/out/test/random-story/testwordfreqs.txt
+Week2/random-story/out/test/random-story/data/testwordfreqs.txt
+Week2/random-story/out/test/random-story/data/expected-output-testwordfreqs.txt
+Week2/random-story/out/test/random-story/expected-output-testwordfreqs.txt

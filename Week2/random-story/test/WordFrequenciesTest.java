@@ -8,5 +8,4 @@ class WordFrequenciesTest {
         WordFrequencies w = new WordFrequencies();
         w.tester();
     }
-
 }
