@@ -23,7 +23,7 @@
       <file leaf-file-name="WordFrequencies.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordFrequencies.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
+            <state relative-caret-position="-83">
               <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
               <folding />
             </state>
@@ -33,8 +33,8 @@
       <file leaf-file-name="CharactersInPlay.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CharactersInPlay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+            <state relative-caret-position="128">
+              <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,8 +45,8 @@
       <file leaf-file-name="CharactersInPlayTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/CharactersInPlayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2" column="49" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="2" selection-end-column="49" />
+            <state relative-caret-position="136">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -316,8 +316,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CharactersInPlayTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest.runTester" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.WordFrequenciesTest.runTester" />
       </list>
     </recent_temporary>
   </component>
@@ -340,18 +340,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 20m 05s.xml">
-      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 20m 53s.xml">
-      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 23m 42s.xml">
-      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 24m 54s.xml">
-      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 25m 33s.xml">
       <configuration name="CharactersInPlayTest" configurationId="JUnit" />
     </history-entry>
@@ -369,6 +357,18 @@
     </history-entry>
     <history-entry file="CharactersInPlayTest - 2018.02.25 at 19h 29m 59s.xml">
       <configuration name="CharactersInPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 21h 49m 00s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 21h 50m 16s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CharactersInPlayTest - 2018.02.25 at 21h 50m 59s.xml">
+      <configuration name="CharactersInPlayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordFrequenciesTest - 2018.02.25 at 21h 47m 44s.xml">
+      <configuration name="WordFrequenciesTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -430,7 +430,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WordFrequencies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="-83">
           <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding />
         </state>
@@ -438,16 +438,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/CharactersInPlayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="49" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="2" selection-end-column="49" />
+        <state relative-caret-position="136">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CharactersInPlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+        <state relative-caret-position="128">
+          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
