@@ -2,45 +2,39 @@ import edu.duke.*;
 import java.util.*;
 
 public class GladLibMap {
-	private ArrayList<String> adjectiveList;
-	private ArrayList<String> nounList;
-	private ArrayList<String> colorList;
-	private ArrayList<String> countryList;
-	private ArrayList<String> nameList;
-	private ArrayList<String> animalList;
-	private ArrayList<String> timeList;
-	private ArrayList<String> verbList;
-	private ArrayList<String> fruitList;
 
-	private ArrayList<String> usedWords;
+	private HashMap<String, ArrayList<String>> myMap;
+
+	//private ArrayList<String> usedWords;
+	private HashMap<String, ArrayList<String>> usedWords;
 	
 	private Random myRandom;
 	
 	private static String dataSourceURL = "http://dukelearntoprogram.com/course3/data";
-	private static String dataSourceDirectory = "data";
+	private static String dataSourceDirectory = "src/data";
+
+	private static String[] categories = {"adjective", "noun", "color",
+			"country", "name", "animal",
+			"timeframe", "verb", "fruit"};
 	
 	public GladLibMap(){
+		myMap = new HashMap<String, ArrayList<String>>();
 		initializeFromSource(dataSourceDirectory);
-		usedWords = new ArrayList<String>();
+		usedWords = new HashMap<String, ArrayList<String>>();
 		myRandom = new Random();
 	}
 	
 	public GladLibMap(String source){
+		myMap = new HashMap<String, ArrayList<String>>();
 		initializeFromSource(source);
-		usedWords = new ArrayList<String>();
+		usedWords = new HashMap<String, ArrayList<String>>();
 		myRandom = new Random();
 	}
 	
 	private void initializeFromSource(String source) {
-		adjectiveList= readIt(source+"/adjective.txt");	
-		nounList = readIt(source+"/noun.txt");
-		colorList = readIt(source+"/color.txt");
-		countryList = readIt(source+"/country.txt");
-		nameList = readIt(source+"/name.txt");		
-		animalList = readIt(source+"/animal.txt");
-		timeList = readIt(source+"/timeframe.txt");
-		verbList = readIt(source+"/verb.txt");
-		fruitList = readIt(source+"/fruit.txt");
+		for (String category : categories) {
+			myMap.put(category, readIt(source+"/"+category+".txt"));
+		}
 	}
 	
 	private String randomFrom(ArrayList<String> source){
@@ -49,35 +43,11 @@ public class GladLibMap {
 	}
 	
 	private String getSubstitute(String label) {
-		if (label.equals("country")) {
-			return randomFrom(countryList);
-		}
-		if (label.equals("color")){
-			return randomFrom(colorList);
-		}
-		if (label.equals("noun")){
-			return randomFrom(nounList);
-		}
-		if (label.equals("name")){
-			return randomFrom(nameList);
-		}
-		if (label.equals("adjective")){
-			return randomFrom(adjectiveList);
-		}
-		if (label.equals("animal")){
-			return randomFrom(animalList);
-		}
-		if (label.equals("timeframe")){
-			return randomFrom(timeList);
-		}
-		if (label.equals("verb")){
-			return randomFrom(verbList);
-		}
-		if (label.equals("fruit")){
-			return randomFrom(fruitList);
-		}
 		if (label.equals("number")){
 			return ""+myRandom.nextInt(50)+5;
+		}
+		if (myMap.containsKey(label)) {
+			return randomFrom(myMap.get(label));
 		}
 		return "**UNKNOWN**";
 	}
@@ -90,21 +60,35 @@ public class GladLibMap {
 		}
 		String prefix = w.substring(0,first);
 		String suffix = w.substring(last+1);
-		String sub = getSubstitute(w.substring(first+1,last));
-		// Make sure we haven't seen sub before.  If we have,
-		// make up to 20 attempts to get a different word.
-		// If we run out at that point, we will allow the duplicate.
-		int attempts = 1;
-		while (attempts <= 20) {
-			if (usedWords.contains(sub)) {
-				// sub already used, attempt to get a replacement.
-				sub = getSubstitute(w.substring(first + 1, last));
-				attempts += 1;
-			} else {
-				// not found, remember it and exit loop.
-				usedWords.add(sub);
-				break;
+		String category = w.substring(first+1, last);
+		String sub = getSubstitute(category);
+		// If category does not already exist, we need
+		// to add the category, and then add the substitute
+		// to it.  No chance of a repeat in this case.
+		if (! usedWords.containsKey(category)) {
+			ArrayList<String> words = new ArrayList<String>();
+			words.add(sub);
+			usedWords.put(category, words);
+		} else {
+			// We have a previously seen category, so make sure we
+			// haven't seen sub before.  If we have, make up to 20
+			// attempts to get a different word.  If we run out at
+			// that point, we will allow the duplicate.
+			int attempts = 1;
+			ArrayList<String> words = usedWords.get(category);
+			while (attempts <= 20) {
+				if (words.contains(sub)) {
+					// sub already used, attempt to get a replacement.
+					sub = getSubstitute(category);
+					attempts += 1;
+				} else {
+					// not found, remember it and exit loop.
+					words.add(sub);
+					break;
+				}
 			}
+			// Now save the updated word list for the category.
+			usedWords.put(category, words);
 		}
 		return prefix+sub+suffix;
 	}
@@ -154,13 +138,48 @@ public class GladLibMap {
 		}
 		return list;
 	}
+
+	private int totalUsedWords() {
+		int total = 0;
+		for (String category : usedWords.keySet()) {
+			total += usedWords.get(category).size();
+		}
+		return total;
+	}
 	
 	public void makeStory(){
 		usedWords.clear();
-	    System.out.println("\n");
-		String story = fromTemplate("src/data/madtemplate2.txt");
+	    System.out.println();
+		//String story = fromTemplate("src/data/madtemplate2.txt");
+		String story = fromTemplate("src/data/madtemplate.txt");
 		printOut(story, 60);
-		System.out.println("\n\nReplaced "+usedWords.size()+" words.");
+		System.out.println("\n\nReplaced "+totalUsedWords()+" words.");
+		System.out.println("There were "+totalWordsInMap()+" words to choose from in "+
+				myMap.keySet().size()+" categories (not including 'number' which isn't mapped).");
+		System.out.println("There were "+totalWordsConsidered()+" words considered in "+
+				usedWords.keySet().size()+" categories.");
+	}
+
+	public int totalWordsInMap() {
+		int total = 0;
+		for (String category : myMap.keySet()) {
+			total += myMap.get(category).size();
+		}
+		return total;
+	}
+
+	// I think this is supposed to count like total words in map, but only for
+	// the categories used in this gladlib.  It could mean counting words used
+	// in the categories used, but that doesn't make sense now that I think about
+	// it.  A used word would only be "used" if a category contained it.  If the
+	// quiz looks for "how many of category <noun> got used", then I have to
+	// change this code.
+	public int totalWordsConsidered() {
+		int total = 0;
+		for (String category : usedWords.keySet()) {
+			total += usedWords.get(category).size();
+		}
+		return total;
 	}
 	
 
