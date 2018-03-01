@@ -34,4 +34,36 @@ class WordsInFilesTest {
         assertTrue(two.contains("love") && two.contains("are") && two.contains("dogs"), "two content");
     }
 
+    @Test
+    void maxNumber() {
+        WordsInFiles wf = new WordsInFiles();
+
+        // Before words loaded, should get -1 back.
+        assertTrue(wf.maxNumber() == -1, "no words loaded is -1");
+
+        // Load
+        wf.buildWordFileMap();
+
+        // With our 4 test files, maxNumber() should be 3.
+        assertTrue(wf.maxNumber() == 3, "loaded 4 brief files");
+    }
+
+    @Test
+    void printFilesIn() {
+        WordsInFiles wf = new WordsInFiles();
+        wf.buildWordFileMap();
+
+        // null and empty don't cause a crash.
+        wf.printFilesIn(null);
+        wf.printFilesIn("");
+
+        // word not in the file does not crash, prints message.
+        System.out.println("expect bccfgh not found");
+        wf.printFilesIn("bccfgh");
+
+        // cat appears in 3 files.
+        System.out.println("expect cats in brief1, brief3 and brief4");
+        wf.printFilesIn("cats");
+    }
+
 }

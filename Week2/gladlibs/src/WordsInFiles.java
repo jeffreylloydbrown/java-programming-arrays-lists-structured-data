@@ -56,7 +56,7 @@ public class WordsInFiles {
             if (size > max) max = size;
         }
         return max;
-    }
+    }  // maxNumber
 
     public ArrayList<String> wordsInNumFiles (int number) {
         ArrayList<String> exactly = new ArrayList<String>();
@@ -73,6 +73,19 @@ public class WordsInFiles {
         }
 
         return exactly;
+    }  // wordsInNumFiles
+
+    public void printFilesIn (String word) {
+        if (hasValue(word)) {
+            if (wordLists.containsKey(word)) {
+                ArrayList<String> fileList = wordLists.get(word);
+                System.out.println("'"+word+"' appears in:");
+                for (String filename : fileList)
+                    System.out.println("  "+filename);
+            } else {
+                System.out.println("word '"+word+"' not found in any scanned file");
+            }
+        }
     }
 
     void showMap() {
