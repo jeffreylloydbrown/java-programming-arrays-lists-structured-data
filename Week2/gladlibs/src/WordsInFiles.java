@@ -65,8 +65,7 @@ public class WordsInFiles {
         // there won't be any cases of those.
         if (number > 0) {
             for (String word : wordLists.keySet()) {
-                ArrayList<String> fileList = wordLists.get(word);
-                if (fileList.size() == number) {
+                if (wordLists.get(word).size() == number) {
                     exactly.add(word);
                 }
             }
@@ -78,9 +77,8 @@ public class WordsInFiles {
     public void printFilesIn (String word) {
         if (hasValue(word)) {
             if (wordLists.containsKey(word)) {
-                ArrayList<String> fileList = wordLists.get(word);
                 System.out.println("'"+word+"' appears in:");
-                for (String filename : fileList)
+                for (String filename : wordLists.get(word))
                     System.out.println("  "+filename);
             } else {
                 System.out.println("word '"+word+"' not found in any scanned file");
@@ -91,8 +89,8 @@ public class WordsInFiles {
     void showMap() {
         for (String word : wordLists.keySet()) {
             System.out.print(word + ":\t");
-            ArrayList<String> fileList = wordLists.get(word);
-            for (String filename : fileList) {
+            for (String filename : wordLists.get(word)) {
+                // I'm not worrying about the trailing comma at the end of each line.
                 System.out.print(filename+", ");
             }
             System.out.println();

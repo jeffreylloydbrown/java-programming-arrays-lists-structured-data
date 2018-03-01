@@ -5,8 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class WordsInFilesTest {
 
-    String[] filenames = {"brief1.txt", "brief2.txt", "brief3.txt", "brief4.txt"};
-
     @Test
     void tester() {
         WordsInFiles wf = new WordsInFiles();

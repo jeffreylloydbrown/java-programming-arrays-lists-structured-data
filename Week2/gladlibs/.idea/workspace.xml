@@ -14,7 +14,7 @@
     <SUITE FILE_PATH="coverage/gladlibs$CodonCountTest.coverage" NAME="CodonCountTest Coverage Results" MODIFIED="1519771951075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CodonCount</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/gladlibs$WordsInFilesTest.coverage" NAME="WordsInFilesTest Coverage Results" MODIFIED="1519885186171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/gladlibs$WordsInFilesTest.coverage" NAME="WordsInFilesTest Coverage Results" MODIFIED="1519885604948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>WordsInFiles</FILTER>
     </SUITE>
   </component>
@@ -23,8 +23,8 @@
       <file leaf-file-name="WordsInFiles.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordsInFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="1445">
+              <caret line="92" column="85" lean-forward="false" selection-start-line="92" selection-start-column="85" selection-end-line="92" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -33,8 +33,8 @@
       <file leaf-file-name="WordsInFilesTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/WordsInFilesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="68">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -380,9 +380,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordsInFilesTest - 2018.02.28 at 18h 12m 51s.xml">
-      <configuration name="WordsInFilesTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WordsInFilesTest - 2018.02.28 at 23h 55m 33s.xml">
       <configuration name="WordsInFilesTest" configurationId="JUnit" />
     </history-entry>
@@ -402,6 +399,9 @@
       <configuration name="WordsInFilesTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WordsInFilesTest - 2018.03.01 at 00h 19m 59s.xml">
+      <configuration name="WordsInFilesTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WordsInFilesTest - 2018.03.01 at 00h 26m 56s.xml">
       <configuration name="WordsInFilesTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WordsInFilesTest_printFilesIn - 2018.03.01 at 00h 12m 49s.xml">
@@ -576,16 +576,16 @@
     <entry file="file://$PROJECT_DIR$/test/data/WordsInFilesTest.java" />
     <entry file="file://$PROJECT_DIR$/src/WordsInFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="1445">
+          <caret line="92" column="85" lean-forward="false" selection-start-line="92" selection-start-column="85" selection-end-line="92" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/WordsInFilesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="68">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
