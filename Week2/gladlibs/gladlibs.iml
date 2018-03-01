@@ -30,5 +30,16 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/courserajava.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/courserajava.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
