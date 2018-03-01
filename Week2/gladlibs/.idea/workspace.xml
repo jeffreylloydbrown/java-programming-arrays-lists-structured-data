@@ -23,18 +23,38 @@
       <file leaf-file-name="WordsInFiles.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WordsInFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
+            <state relative-caret-position="906">
               <caret line="92" column="85" lean-forward="false" selection-start-line="92" selection-start-column="85" selection-end-line="92" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordsInFilesTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GladLibMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GladLibMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-969">
+              <caret line="84" column="41" lean-forward="true" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GladLibMapTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/GladLibMapTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordsInFilesTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/WordsInFilesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="544">
+              <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -70,6 +90,8 @@
         <option value="$PROJECT_DIR$/test/data/WordsInFilesTest.java" />
         <option value="$PROJECT_DIR$/src/WordsInFiles.java" />
         <option value="$PROJECT_DIR$/test/WordsInFilesTest.java" />
+        <option value="$PROJECT_DIR$/src/GladLibMap.java" />
+        <option value="$PROJECT_DIR$/test/GladLibMapTest.java" />
       </list>
     </option>
   </component>
@@ -127,6 +149,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/courserajava.jar!/" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -148,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WordsInFilesTest">
+  <component name="RunManager" selected="JUnit.GladLibMapTest">
     <configuration name="CodonCountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -174,14 +197,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CodonCountTest.buildCodonMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CodonCountTest.readFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="gladlibs" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CodonCountTest" />
-      <option name="METHOD_NAME" value="buildCodonMap" />
+      <option name="METHOD_NAME" value="readFromFile" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -194,15 +217,15 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CodonCountTest.readFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GladLibMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="gladlibs" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CodonCountTest" />
-      <option name="METHOD_NAME" value="readFromFile" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="GladLibMapTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -346,18 +369,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CodonCountTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CodonCountTest.buildCodonMap" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CodonCountTest.readFromFile" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.WordsInFilesTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WordsInFilesTest.printFilesIn" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CodonCountTest.readFromFile" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.WordsInFilesTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WordsInFilesTest.printFilesIn" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GladLibMapTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WordsInFilesTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.WordsInFilesTest.printFilesIn" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CodonCountTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CodonCountTest.readFromFile" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CodonCountTest.buildCodonMap" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GladLibMapTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WordsInFilesTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.WordsInFilesTest.printFilesIn" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CodonCountTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CodonCountTest.readFromFile" />
       </list>
     </recent_temporary>
   </component>
@@ -380,8 +403,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WordsInFilesTest - 2018.02.28 at 23h 55m 33s.xml">
-      <configuration name="WordsInFilesTest" configurationId="JUnit" />
+    <history-entry file="GladLibMapTest - 2018.03.01 at 01h 11m 09s.xml">
+      <configuration name="GladLibMapTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WordsInFilesTest - 2018.02.28 at 23h 56m 15s.xml">
       <configuration name="WordsInFilesTest" configurationId="JUnit" />
@@ -423,9 +446,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -574,18 +597,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/data/WordsInFilesTest.java" />
+    <entry file="file://$PROJECT_DIR$/test/WordsInFilesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WordsInFiles.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
+        <state relative-caret-position="906">
           <caret line="92" column="85" lean-forward="false" selection-start-line="92" selection-start-column="85" selection-end-line="92" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/WordsInFilesTest.java">
+    <entry file="file://$PROJECT_DIR$/src/GladLibMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="-969">
+          <caret line="84" column="41" lean-forward="true" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/GladLibMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -667,6 +706,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
