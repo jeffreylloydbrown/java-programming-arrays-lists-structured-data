@@ -69,4 +69,18 @@ class WordsInFilesTest {
         wf.printFilesIn("cats");
     }
 
+    @Test
+    void practiceQuiz() {
+        WordsInFiles wf = new WordsInFiles();
+        wf.buildWordFileMap(); // select the 5 Shakespeare files interactively
+        ArrayList<String> five = wf.wordsInNumFiles(5);
+        System.out.println("Q4.  "+ five.size());
+        ArrayList<String> four = wf.wordsInNumFiles(4);
+        System.out.println("Q5.  "+four.size());
+        System.out.println("Q6.  Answer is the file NOT listed");
+        wf.printFilesIn("sad");
+        System.out.println("Q7.  Answer is the list of these files");
+        wf.printFilesIn("red");
+    }
+
 }

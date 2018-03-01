@@ -44,4 +44,13 @@ class CodonCountTest {
         }
     }
 
+    @Test
+    void practiceQuiz() {
+        String dna = new FileResource("test/data/dnaMystery1.txt").asString().trim();
+        CodonCount cc = new CodonCount();
+
+        cc.buildCodonMap(1, dna);
+        System.out.println("Q3.  "+cc.getMostCommonCodon());
+    }
+
 }

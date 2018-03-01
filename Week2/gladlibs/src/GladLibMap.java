@@ -139,47 +139,35 @@ public class GladLibMap {
 		return list;
 	}
 
-	private int totalUsedWords() {
-		int total = 0;
-		for (String category : usedWords.keySet()) {
-			total += usedWords.get(category).size();
-		}
-		return total;
-	}
-	
 	public void makeStory(){
 		usedWords.clear();
 	    System.out.println();
-		//String story = fromTemplate("src/data/madtemplate2.txt");
-		String story = fromTemplate("src/data/madtemplate.txt");
+		String story = fromTemplate("src/data/madtemplate2.txt");
+		//String story = fromTemplate("src/data/madtemplate.txt");
 		printOut(story, 60);
-		System.out.println("\n\nReplaced "+totalUsedWords()+" words.");
+		System.out.println("\n\nReplaced "+totalWordsConsidered()+" words using "+
+				usedWords.keySet().size()+" categories.");
 		System.out.println("There were "+totalWordsInMap()+" words to choose from in "+
 				myMap.keySet().size()+" categories (not including 'number' which isn't mapped).");
-		System.out.println("There were "+totalWordsConsidered()+" words considered in "+
-				usedWords.keySet().size()+" categories.");
+	}
+
+	private int totalMap (HashMap<String, ArrayList<String>> map) {
+		int total = 0;
+		for (String category : map.keySet()) {
+			total += map.get(category).size();
+		}
+		return total;
 	}
 
 	public int totalWordsInMap() {
-		int total = 0;
-		for (String category : myMap.keySet()) {
-			total += myMap.get(category).size();
-		}
-		return total;
+		return totalMap(myMap);
 	}
 
-	// I think this is supposed to count like total words in map, but only for
-	// the categories used in this gladlib.  It could mean counting words used
-	// in the categories used, but that doesn't make sense now that I think about
-	// it.  A used word would only be "used" if a category contained it.  If the
-	// quiz looks for "how many of category <noun> got used", then I have to
-	// change this code.
+	// This counts like totalWordsInMap(), but only for categories actually
+	// used in the story.  The assignment description is confusing, the practice
+	// quiz helped clear it up.
 	public int totalWordsConsidered() {
-		int total = 0;
-		for (String category : usedWords.keySet()) {
-			total += usedWords.get(category).size();
-		}
-		return total;
+		return totalMap(usedWords);
 	}
 	
 
