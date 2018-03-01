@@ -12,7 +12,12 @@ class WordsInFilesTest {
         WordsInFiles wf = new WordsInFiles();
         wf.buildWordFileMap();
 
-        System.out.println("maximum number of files any word is in = "+wf.maxNumber());
+        int max = wf.maxNumber();
+        System.out.println("maximum number of files any word is in = "+max);
+
+        ArrayList<String> maxWords = wf.wordsInNumFiles(max);
+        for (String word : maxWords)
+            wf.printFilesIn(word);
 
         wf.showMap();
     }
