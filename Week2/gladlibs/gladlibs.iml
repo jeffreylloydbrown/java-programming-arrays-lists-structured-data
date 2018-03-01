@@ -12,11 +12,11 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/ext/courserajava.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/courserajava.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/ext/courserajava.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/courserajava.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -28,17 +28,6 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/courserajava.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://C:/Program Files/Java/jdk1.8.0_102/jre/lib/ext/courserajava.jar!/" />
-        </SOURCES>
       </library>
     </orderEntry>
   </component>
