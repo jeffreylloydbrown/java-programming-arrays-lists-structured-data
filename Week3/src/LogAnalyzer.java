@@ -14,11 +14,14 @@ public class LogAnalyzer
      private ArrayList<LogEntry> records;
      
      public LogAnalyzer() {
-         // complete constructor
+         records = new ArrayList<LogEntry>();
      }
         
      public void readFile(String filename) {
-         // complete method
+         FileResource fr = new FileResource(filename);
+         for (String rec : fr.lines()) {
+             records.add(WebLogParser.parseEntry(rec));
+         }
      }
         
      public void printAll() {
