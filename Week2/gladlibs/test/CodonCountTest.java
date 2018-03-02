@@ -53,4 +53,23 @@ class CodonCountTest {
         System.out.println("Q3.  "+cc.getMostCommonCodon());
     }
 
+    @Test
+    void finalQuiz() {
+        String dna = new FileResource("test/data/dnaMystery2.txt").asString().trim();
+        CodonCount cc = new CodonCount();
+
+        System.out.println("Q9 follows:");
+        cc.runFrame(1, dna);
+        System.out.println();
+
+        System.out.println("Q10 follows:");
+        cc.runFrame(2, dna);
+        System.out.println();
+
+        System.out.println("Q11 follows:");
+        cc.runFrame(0, dna);
+        System.out.println("the answer for 7 to 7 counts:");
+        cc.printCodonCounts(7, 7);
+        System.out.println();
+    }
 }
