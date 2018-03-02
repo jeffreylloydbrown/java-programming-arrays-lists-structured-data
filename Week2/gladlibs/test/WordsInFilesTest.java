@@ -83,4 +83,22 @@ class WordsInFilesTest {
         wf.printFilesIn("red");
     }
 
+    @Test
+    void finalQuiz() {
+        WordsInFiles wf = new WordsInFiles();
+        wf.buildWordFileMap();  // select caesar.txt, confucius.txt, errors.txt, hamlet.txt, likeit.txt, macbeth.txt and romeo.txt.
+
+        ArrayList<String> seven = wf.wordsInNumFiles(7);
+        System.out.println("Q12. "+seven.size());
+
+        ArrayList<String> four = wf.wordsInNumFiles(4);
+        System.out.println("Q13. "+four.size());
+
+        System.out.println("Q14 answer is where 'sea' does not appear");
+        wf.printFilesIn("sea");
+
+        System.out.println("Q15 answer is all these files");
+        wf.printFilesIn("tree");
+    }
+
 }
