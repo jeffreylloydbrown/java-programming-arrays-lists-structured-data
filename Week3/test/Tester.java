@@ -69,4 +69,20 @@ class Tester {
         assertTrue(la.iPsMostVisits(new HashMap<String, Integer>()).isEmpty());
         assertTrue(la.iPsMostVisits(null).isEmpty());
     }
+
+    @Test
+    public void iPsForDays() {
+        LogAnalyzer la = new LogAnalyzer();
+        // shouldn't crash if log file not loaded, get empty map back.
+        assertTrue(la.iPsForDays().isEmpty());
+
+        la.readFile("test/data/weblog3-short_log");
+        HashMap<String, ArrayList<String>> byDates = la.iPsForDays();
+        assertEquals(1, byDates.get("Sep 14").size());
+        assertEquals(4, byDates.get("Sep 21").size());
+        assertEquals(5, byDates.get("Sep 30").size());
+
+        // Dates that don't exist will throw exception if we don't use getOrDefault.
+        assertEquals(0, byDates.getOrDefault("Juk 92", new ArrayList<String>()).size());
+    }
 }

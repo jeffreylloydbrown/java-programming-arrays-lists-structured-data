@@ -67,4 +67,15 @@ public class LogAnalyzer
         return results;
     }  // iPsMostVisits
 
+    public HashMap<String, ArrayList<String>> iPsForDays () {
+        HashMap<String, ArrayList<String>> forDays = new HashMap<String, ArrayList<String>>();
+        for (LogEntry le : records) {
+            String mmm_dd = le.getAccessTime().toString().substring(4,10);
+            ArrayList<String> today = forDays.getOrDefault(mmm_dd, new ArrayList<String>());
+            today.add(le.getIpAddress());
+            forDays.put(mmm_dd, today);
+        }
+        return forDays;
+    }
+
 }  // LogAnalyzer
