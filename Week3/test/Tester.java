@@ -96,4 +96,25 @@ class Tester {
         assertTrue(la.dayWithMostIPVisits(new HashMap<String, ArrayList<String>>()).isEmpty());
         assertTrue(la.dayWithMostIPVisits(null).isEmpty());
     }
+
+    @Test
+    public void iPsWithMostVisitsOnDay() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/weblog3-short_log");
+        HashMap<String, ArrayList<String>> byDays = la.iPsForDays();
+        ArrayList<String> most = la.iPsWithMostVisitsOnDay(byDays, "Sep 30");
+        assertEquals(2, most.size());
+        assertTrue(most.contains("61.15.121.171"));
+        assertTrue(most.contains("177.4.40.87"));
+
+        // Date not found should return empty list.  So should invalid date.
+        assertTrue(la.iPsWithMostVisitsOnDay(byDays, "Jan 22").isEmpty());
+        assertTrue(la.iPsWithMostVisitsOnDay(byDays, "Juk 99").isEmpty());
+
+        // Degenerate cases
+        assertTrue(la.iPsWithMostVisitsOnDay(byDays, "").isEmpty());
+        assertTrue(la.iPsWithMostVisitsOnDay(byDays, null).isEmpty());
+        assertTrue(la.iPsWithMostVisitsOnDay(new HashMap<String, ArrayList<String>>(), "Sep 30").isEmpty());
+        assertTrue(la.iPsWithMostVisitsOnDay(null, "Sep 30").isEmpty());
+    }
 }

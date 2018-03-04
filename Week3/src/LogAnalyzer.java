@@ -94,4 +94,33 @@ public class LogAnalyzer
         return most;
     }
 
+    public ArrayList<String> iPsWithMostVisitsOnDay (HashMap<String, ArrayList<String>> byDays, String mmm_dd) {
+        ArrayList<String> results = new ArrayList<String>();
+        // validate parameters
+        // If any problems, results is empty so we can return it.
+        if (byDays == null || byDays.isEmpty()) return results;
+        if (mmm_dd == null || mmm_dd.isEmpty()) return results;
+
+        // Need just the list of addresses for the 1 target day.
+        // And the most hits on that day to know what to search for.
+        // Unfortunately countVisitsByIP() only works with LogEntry objects.
+        // So build a similar result here, and then use mostNumberVisitsByIP() to
+        // get the visit number to look for.
+        ArrayList<String> theDay = byDays.getOrDefault(mmm_dd, new ArrayList<String>());
+        HashMap<String, Integer> counts = new HashMap<String, Integer>();
+        for (String address : theDay) {
+            counts.put(address, counts.getOrDefault(address, 0) + 1);
+        }
+        int most = mostNumberVisitsByIP(counts);
+
+        // OK, filter `counts` for value == `most`, put that into `results`.
+        // results = counts.filterByValue(most).keySet();  Sigh.
+        for (String key : counts.keySet()) {
+            if (counts.get(key) == most)
+                results.add(key);
+        }
+
+        return results;
+    } // iPsWithMostVisitsOnDay
+
 }  // LogAnalyzer
