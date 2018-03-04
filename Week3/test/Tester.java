@@ -28,6 +28,9 @@ class Tester {
     @Test
     public void countVisitsPerIP() {
         LogAnalyzer laShortTest = new LogAnalyzer();
+        // Calling countVisitsPerIP() before loading a file shouldn't crash, should
+        // return empty hashmap
+        assertTrue(laShortTest.countVisitsPerIP().isEmpty());
         laShortTest.readFile("test/data/short-test_log");
         HashMap<String, Integer> counts = laShortTest.countVisitsPerIP();
         assertEquals(3, (int) counts.get("152.3.135.44"));
