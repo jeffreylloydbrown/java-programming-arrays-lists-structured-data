@@ -81,4 +81,17 @@ public class LogAnalyzer
         return forDays;
     }
 
+    public String dayWithMostIPVisits (HashMap<String, ArrayList<String>> byDays) {
+        if (byDays == null || byDays.isEmpty()) return "";
+
+        String most = "";
+        for (String day : byDays.keySet()) {
+            if (byDays.get(day).size() > byDays.getOrDefault(most, new ArrayList<String>()).size()) {
+                most = day;
+            }
+        }
+
+        return most;
+    }
+
 }  // LogAnalyzer

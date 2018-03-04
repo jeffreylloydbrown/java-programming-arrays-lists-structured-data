@@ -85,4 +85,15 @@ class Tester {
         // Dates that don't exist will throw exception if we don't use getOrDefault.
         assertEquals(0, byDates.getOrDefault("Juk 92", new ArrayList<String>()).size());
     }
+
+    @Test
+    public void dayWithMostIPVisits() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/weblog3-short_log");
+        assertEquals("Sep 30", la.dayWithMostIPVisits(la.iPsForDays()));
+
+        // degenerate cases
+        assertTrue(la.dayWithMostIPVisits(new HashMap<String, ArrayList<String>>()).isEmpty());
+        assertTrue(la.dayWithMostIPVisits(null).isEmpty());
+    }
 }
