@@ -51,4 +51,19 @@ class Tester {
         assertEquals(0, laShortTest.mostNumberVisitsByIP(new HashMap<String, Integer>()));
         assertEquals(0, laShortTest.mostNumberVisitsByIP(null));
     }
+
+    @Test
+    public void iPsMostVisits() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/weblog3-short_log");
+        HashMap<String, Integer> counts = la.countVisitsPerIP();
+        ArrayList<String> ipAddresses = la.iPsMostVisits(counts);
+        assertEquals(2, ipAddresses.size());
+        assertTrue(ipAddresses.contains("61.15.121.171"));
+        assertTrue(ipAddresses.contains("84.133.195.161"));
+
+        // degenerate cases don't crash, return empty lists
+        assertTrue(la.iPsMostVisits(new HashMap<String, Integer>()).isEmpty());
+        assertTrue(la.iPsMostVisits(null).isEmpty());
+    }
 }

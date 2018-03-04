@@ -49,5 +49,22 @@ public class LogAnalyzer
          }
          return most;
      }
+
+     public ArrayList<String> iPsMostVisits (HashMap<String, Integer> counts) {
+         ArrayList<String> results = new ArrayList<String>();
+         // now check parameters, if they aren't valid results is empty so can return it.
+         if (counts == null || counts.isEmpty()) return new ArrayList<String>();
+
+         // What do we look for?  The maximum visits, so get that.
+         int maxVisits = mostNumberVisitsByIP(counts);
+
+         // Now we can search counts for value == maxVisits & put key into results.
+         // Geez I miss filter().  And .max() for that matter.
+         for (String key : counts.keySet()) {
+             if (counts.get(key) == maxVisits) results.add(key);
+         }
+
+         return results;
+     }
      
 }  // LogAnalyzer

@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Week3$Tester.coverage" NAME="Tester Coverage Results" MODIFIED="1520192754719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Week3$Tester.coverage" NAME="Tester Coverage Results" MODIFIED="1520193617362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LogAnalyzer</FILTER>
       <FILTER>LogEntry</FILTER>
     </SUITE>
@@ -28,10 +28,11 @@
       <file leaf-file-name="LogAnalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LogAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="444">
+              <caret line="61" column="62" lean-forward="false" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
               <folding>
                 <element signature="e#796#813#0" expanded="true" />
+                <element signature="e#1487#1495#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +41,8 @@
       <file leaf-file-name="Tester.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
+            <state relative-caret-position="493">
+              <caret line="65" column="79" lean-forward="false" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -416,9 +417,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tester - 2018.03.04 at 12h 18m 26s.xml">
-      <configuration name="Tester" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Tester - 2018.03.04 at 12h 18m 50s.xml">
       <configuration name="Tester" configurationId="JUnit" />
     </history-entry>
@@ -434,6 +432,12 @@
     <history-entry file="Tester - 2018.03.04 at 13h 45m 56s.xml">
       <configuration name="Tester" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Tester - 2018.03.04 at 14h 00m 13s.xml">
+      <configuration name="Tester" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tester - 2018.03.04 at 14h 00m 18s.xml">
+      <configuration name="Tester" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="Tester_countVisitsPerIP - 2018.03.04 at 12h 28m 55s.xml">
       <configuration name="Tester.countVisitsPerIP" configurationId="JUnit" />
     </history-entry>
@@ -442,9 +446,6 @@
     </history-entry>
     <history-entry file="Tester_mostNumberVisitsByIP - 2018.03.04 at 13h 45m 50s.xml">
       <configuration name="Tester.mostNumberVisitsByIP" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tester_testLogAnalyzer - 2018.03.02 at 16h 38m 50s.xml">
-      <configuration name="Tester.testLogAnalyzer" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -555,18 +556,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LogAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="444">
+          <caret line="61" column="62" lean-forward="false" selection-start-line="61" selection-start-column="62" selection-end-line="61" selection-end-column="62" />
           <folding>
             <element signature="e#796#813#0" expanded="true" />
+            <element signature="e#1487#1495#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
+        <state relative-caret-position="493">
+          <caret line="65" column="79" lean-forward="false" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
           <folding />
         </state>
       </provider>
