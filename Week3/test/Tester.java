@@ -40,4 +40,15 @@ class Tester {
         assertEquals(0, (int) counts.getOrDefault("", 0));
         assertEquals(0, (int) counts.getOrDefault(null, 0));
     }
+
+    @Test
+    public void mostNumberVisitsByIP() {
+        LogAnalyzer laShortTest = new LogAnalyzer();
+        laShortTest.readFile("test/data/weblog3-short_log");
+        HashMap<String, Integer> counts = laShortTest.countVisitsPerIP();
+        assertEquals(3, laShortTest.mostNumberVisitsByIP(counts));
+
+        assertEquals(0, laShortTest.mostNumberVisitsByIP(new HashMap<String, Integer>()));
+        assertEquals(0, laShortTest.mostNumberVisitsByIP(null));
+    }
 }

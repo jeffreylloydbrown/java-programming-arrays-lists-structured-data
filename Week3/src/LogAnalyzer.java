@@ -38,5 +38,16 @@ public class LogAnalyzer
          }
          return counts;
      }
+
+     public int mostNumberVisitsByIP (HashMap<String, Integer> counts) {
+         if (counts == null || counts.isEmpty()) return 0;
+
+         int most = 0;
+         for (String address : counts.keySet()) {
+             int count = counts.get(address);
+             if (count > most) most = count;
+         }
+         return most;
+     }
      
 }  // LogAnalyzer
