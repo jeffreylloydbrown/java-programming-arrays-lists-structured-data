@@ -53,7 +53,7 @@ public class LogAnalyzer
      public ArrayList<String> iPsMostVisits (HashMap<String, Integer> counts) {
          ArrayList<String> results = new ArrayList<String>();
          // now check parameters, if they aren't valid results is empty so can return it.
-         if (counts == null || counts.isEmpty()) return new ArrayList<String>();
+         if (counts == null || counts.isEmpty()) return results;
 
          // What do we look for?  The maximum visits, so get that.
          int maxVisits = mostNumberVisitsByIP(counts);
@@ -65,6 +65,6 @@ public class LogAnalyzer
          }
 
          return results;
-     }
+     }  // iPsMostVisits
      
 }  // LogAnalyzer
