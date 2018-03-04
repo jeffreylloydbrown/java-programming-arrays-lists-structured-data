@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9f0eb46-3fd8-4009-bae7-30f61502f999" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LogAnalyzer.java" afterPath="$PROJECT_DIR$/src/LogAnalyzer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Tester.java" afterPath="$PROJECT_DIR$/test/Tester.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LogAnalyzer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LogAnalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LogAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -51,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Tester.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="111" column="74" lean-forward="false" selection-start-line="111" selection-start-column="74" selection-end-line="111" selection-end-column="74" />
+            <state relative-caret-position="425">
+              <caret line="131" column="88" lean-forward="false" selection-start-line="131" selection-start-column="88" selection-end-line="131" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -189,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tester">
+  <component name="RunManager" selected="JUnit.Tester.practiceQuiz">
     <configuration name="Tester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -306,7 +305,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Tester.mostNumberVisitsByIP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tester.practiceQuiz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="LogAnalyzer" />
@@ -322,7 +321,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tester" />
-      <option name="METHOD_NAME" value="mostNumberVisitsByIP" />
+      <option name="METHOD_NAME" value="practiceQuiz" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
@@ -417,18 +416,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Tester" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Tester.mostNumberVisitsByIP" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Tester.iPsForDays" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Tester.dayWithMostIPVisits" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Tester.iPsWithMostVisitsOnDay" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Tester.iPsForDays" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Tester.dayWithMostIPVisits" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Tester.iPsWithMostVisitsOnDay" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Tester.practiceQuiz" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Tester" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Tester.iPsWithMostVisitsOnDay" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Tester.dayWithMostIPVisits" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Tester.iPsForDays" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Tester.mostNumberVisitsByIP" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Tester.practiceQuiz" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Tester" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Tester.iPsWithMostVisitsOnDay" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Tester.dayWithMostIPVisits" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Tester.iPsForDays" />
       </list>
     </recent_temporary>
   </component>
@@ -451,26 +450,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tester - 2018.03.04 at 14h 49m 02s.xml">
-      <configuration name="Tester" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tester - 2018.03.04 at 14h 54m 37s.xml">
-      <configuration name="Tester" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Tester - 2018.03.04 at 15h 22m 53s.xml">
       <configuration name="Tester" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Tester - 2018.03.04 at 15h 24m 05s.xml">
       <configuration name="Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Tester_dayWithMostIPVisits - 2018.03.04 at 14h 48m 56s.xml">
-      <configuration name="Tester.dayWithMostIPVisits" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tester_iPsWithMostVisitsOnDay - 2018.03.04 at 14h 54m 42s.xml">
-      <configuration name="Tester.iPsWithMostVisitsOnDay" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tester_iPsWithMostVisitsOnDay - 2018.03.04 at 14h 58m 32s.xml">
-      <configuration name="Tester.iPsWithMostVisitsOnDay" configurationId="JUnit" />
+    <history-entry file="Tester - 2018.03.04 at 15h 27m 52s.xml">
+      <configuration name="Tester" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Tester_iPsWithMostVisitsOnDay - 2018.03.04 at 15h 00m 30s.xml">
       <configuration name="Tester.iPsWithMostVisitsOnDay" configurationId="JUnit" />
@@ -480,6 +467,18 @@
     </history-entry>
     <history-entry file="Tester_iPsWithMostVisitsOnDay - 2018.03.04 at 15h 18m 12s.xml">
       <configuration name="Tester.iPsWithMostVisitsOnDay" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tester_practiceQuiz - 2018.03.04 at 15h 28m 00s.xml">
+      <configuration name="Tester.practiceQuiz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tester_practiceQuiz - 2018.03.04 at 15h 29m 17s.xml">
+      <configuration name="Tester.practiceQuiz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tester_practiceQuiz - 2018.03.04 at 15h 30m 13s.xml">
+      <configuration name="Tester.practiceQuiz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tester_practiceQuiz - 2018.03.04 at 15h 31m 06s.xml">
+      <configuration name="Tester.practiceQuiz" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -588,14 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="111" column="74" lean-forward="false" selection-start-line="111" selection-start-column="74" selection-end-line="111" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LogAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -607,6 +598,14 @@
             <element signature="e#3317#3325#0" expanded="true" />
             <element signature="e#4035#4052#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="131" column="88" lean-forward="false" selection-start-line="131" selection-start-column="88" selection-end-line="131" selection-end-column="88" />
+          <folding />
         </state>
       </provider>
     </entry>

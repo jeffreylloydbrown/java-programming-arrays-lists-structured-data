@@ -117,4 +117,18 @@ class Tester {
         assertTrue(la.iPsWithMostVisitsOnDay(new HashMap<String, ArrayList<String>>(), "Sep 30").isEmpty());
         assertTrue(la.iPsWithMostVisitsOnDay(null, "Sep 30").isEmpty());
     }
+
+    @Test
+    public void practiceQuiz() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/weblog1_log");
+        System.out.println("Q1. "+la.mostNumberVisitsByIP(la.countVisitsPerIP()));
+
+        ArrayList<String> q2 = la.iPsMostVisits(la.countVisitsPerIP());
+        System.out.println("Q2. "+q2);
+
+        System.out.println("Q3. "+la.dayWithMostIPVisits(la.iPsForDays()));
+
+        System.out.println("Q4. "+la.iPsWithMostVisitsOnDay(la.iPsForDays(), "Mar 17"));
+    }
 }
