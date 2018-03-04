@@ -24,4 +24,20 @@ class Tester {
         la.readFile("test/data/short-test_log");
         la.printAll();
     }
+
+    @Test
+    public void countVisitsPerIP() {
+        LogAnalyzer laShortTest = new LogAnalyzer();
+        laShortTest.readFile("test/data/short-test_log");
+        HashMap<String, Integer> counts = laShortTest.countVisitsPerIP();
+        assertEquals(3, (int) counts.get("152.3.135.44"));
+        assertEquals( 2, (int) counts.get("152.3.135.63"));
+        assertEquals(1, (int) counts.get("157.55.39.203"));
+        assertEquals(1, (int) counts.get("110.76.104.12"));
+
+        //negative cases that throw if we don't use getOrDefault
+        assertEquals(0, (int) counts.getOrDefault("99.99.99.99", 0));
+        assertEquals(0, (int) counts.getOrDefault("", 0));
+        assertEquals(0, (int) counts.getOrDefault(null, 0));
+    }
 }

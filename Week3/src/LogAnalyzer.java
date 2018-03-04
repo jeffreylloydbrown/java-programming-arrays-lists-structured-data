@@ -29,6 +29,14 @@ public class LogAnalyzer
              System.out.println(le);
          }
      }
+
+     public HashMap<String, Integer> countVisitsPerIP () {
+         HashMap<String, Integer> counts = new HashMap<String, Integer>();
+         for (LogEntry le : records) {
+             String address = le.getIpAddress();
+             counts.put(address, counts.getOrDefault(address, 0) + 1);
+         }
+         return counts;
+     }
      
-     
-}
+}  // LogAnalyzer
