@@ -71,6 +71,9 @@ public class LogAnalyzer
         HashMap<String, ArrayList<String>> forDays = new HashMap<String, ArrayList<String>>();
         for (LogEntry le : records) {
             String mmm_dd = le.getAccessTime().toString().substring(4,10);
+            // ArrayList.add() returns a success/fail code instead of itself, so we cannot
+            // chain calls thru it.
+            //forDays.put(mmm_dd, forDays.getOrDefault(mmm_dd, new ArrayList<String>()).add(le.getIpAddress()));
             ArrayList<String> today = forDays.getOrDefault(mmm_dd, new ArrayList<String>());
             today.add(le.getIpAddress());
             forDays.put(mmm_dd, today);
