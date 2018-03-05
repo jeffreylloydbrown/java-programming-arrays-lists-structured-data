@@ -1,0 +1,10 @@
+1.  The toString method is modified to include a String parameter.
+2.  In readFile, the log entries were not stored in records.
+3.  choice starts with a for() loop, has an if with now else, and that if is le.getStatusCode > num then println(le)
+4.  45
+5.  8
+6.  40
+7.  63
+8.  188.162.84.63
+9.  Sep 24
+10. 212.128.74.248

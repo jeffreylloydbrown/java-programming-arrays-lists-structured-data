@@ -189,4 +189,19 @@ class Tester {
 
         System.out.println("Q4. "+la.iPsWithMostVisitsOnDay(la.iPsForDays(), "Mar 17"));
     }
+
+    @Test
+    public void finalQuiz() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/weblog2_log");
+        System.out.println("Q4.  "+la.countUniqueIPs());
+        System.out.println("Q5.  "+la.uniqueIPVisitsOnDay("Sep 27").size());
+        System.out.println("Q6.  "+la.countUniqueIPsInRange(200, 299));
+        HashMap<String, Integer> counts = la.countVisitsPerIP();
+        System.out.println("Q7.  "+la.mostNumberVisitsByIP(counts));
+        System.out.println("Q8.  "+la.iPsMostVisits(counts));
+        HashMap<String, ArrayList<String>> days = la.iPsForDays();
+        System.out.println("Q9.  "+la.dayWithMostIPVisits(days));
+        System.out.println("Q10. "+la.iPsWithMostVisitsOnDay(days, "Sep 29"));
+    }
 }
