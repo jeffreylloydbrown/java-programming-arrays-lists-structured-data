@@ -166,6 +166,17 @@ class Tester {
     }
 
     @Test
+    public void uniqueIPPracticeQuiz() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/weblog1_log");
+        System.out.println("Q2 is the set of unique status codes shown here");
+        la.printAllHigherThanNum(400);
+
+        System.out.println("Q3.  "+ la.uniqueIPVisitsOnDay("Mar 17").size());
+        System.out.println("Q4.  "+ la.countUniqueIPsInRange(200, 299));
+    }
+
+    @Test
     public void practiceQuiz() {
         LogAnalyzer la = new LogAnalyzer();
         la.readFile("test/data/weblog1_log");
