@@ -26,6 +26,53 @@ class Tester {
     }
 
     @Test
+    public void countUniqueIPs() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/short-test_log");
+        assertEquals(4, la.countUniqueIPs());
+    }
+
+    @Test
+    public void printAllHigherThanNum() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/short-test_log");
+        System.out.println("Should see no output with 404");
+        la.printAllHigherThanNum(404);
+        System.out.println("End of call with 404");
+        System.out.println("Should see 1 line with 302");
+        la.printAllHigherThanNum(302);
+        System.out.println("End of call with 302");
+        System.out.println("Should see 3 lines with 301");
+        la.printAllHigherThanNum(301);
+        System.out.println("End of call with 301");
+    }
+
+    @Test
+    public void uniqueIPVisitsOnDay() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/weblog-short_log");
+        assertEquals(2, la.uniqueIPVisitsOnDay("Sep 14").size());
+        assertEquals(3, la.uniqueIPVisitsOnDay("Sep 30").size());
+        // Valid date not in the file
+        assertEquals(0, la.uniqueIPVisitsOnDay("Jan 31").size());
+        // Invalid dates
+        assertEquals(0, la.uniqueIPVisitsOnDay("Juk 99").size());
+        assertEquals(0, la.uniqueIPVisitsOnDay("").size());
+        assertEquals(0, la.uniqueIPVisitsOnDay(null).size());
+    }
+
+    @Test
+    void countUniqueIPsInRange() {
+        LogAnalyzer la = new LogAnalyzer();
+        la.readFile("test/data/short-test_log");
+        assertEquals(4, la.countUniqueIPsInRange(200, 299));
+        assertEquals(2, la.countUniqueIPsInRange(399,300));
+        assertEquals(0, la.countUniqueIPsInRange(-1, -1));
+        assertEquals(0, la.countUniqueIPsInRange(90,90));
+        assertEquals(0, la.countUniqueIPsInRange(0, 0));
+    }
+
+    @Test
     public void countVisitsPerIP() {
         LogAnalyzer laShortTest = new LogAnalyzer();
         // Calling countVisitsPerIP() before loading a file shouldn't crash, should

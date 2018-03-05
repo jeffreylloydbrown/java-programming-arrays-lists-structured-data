@@ -8,6 +8,7 @@
 
 import java.util.*;
 import edu.duke.*;
+import sun.rmi.runtime.Log;
 
 public class LogAnalyzer
 {
@@ -28,6 +29,68 @@ public class LogAnalyzer
         for (LogEntry le : records) {
             System.out.println(le);
         }
+    }
+
+    private int countUniqueByIP (ArrayList<LogEntry> list) {
+        ArrayList<String> uniqueIPs = new ArrayList<String>();
+        for (LogEntry le : list) {
+            String address = le.getIpAddress();
+            if (! uniqueIPs.contains(address))
+                uniqueIPs.add(address);
+        }
+        return uniqueIPs.size();
+    }
+
+    public int countUniqueIPs() {
+        return countUniqueByIP(records);
+    }
+
+    public void printAllHigherThanNum (int num) {
+        for (LogEntry le : records) {
+            if (le.getStatusCode() > num)
+                System.out.println(le);
+        }
+    }
+
+    private String getMMMDD (LogEntry le) {
+        return le.getAccessTime().toString().substring(4,10);
+    }
+
+    public ArrayList<String> uniqueIPVisitsOnDay (String someday) {
+        ArrayList<String> thatDay = new ArrayList<String>();
+        if(someday == null || someday.isEmpty()) return thatDay;
+
+        for (LogEntry le : records) {
+            String mmm_dd = getMMMDD(le);
+            String address = le.getIpAddress();
+            if (someday.equals(mmm_dd) && !thatDay.contains(address))
+                thatDay.add(address);
+        }
+
+        return thatDay;
+    }
+
+    public int countUniqueIPsInRange (int low, int high) {
+        // make sure low <= high
+        if (low > high) {
+            int temp = low;
+            low = high;
+            high = temp;
+        }
+
+        // For this to get the correct results, we have to filter by
+        // status code first, then by unique address.  The other way around
+        // and we miss status codes that should have been counted.
+
+        // First filter by status code.
+        ArrayList<LogEntry> byStatus = new ArrayList<LogEntry>();
+        for (LogEntry le : records) {
+            if (low <= le.getStatusCode() && le.getStatusCode() <= high)
+                byStatus.add(le);
+        }
+
+        // Now use the helper we created for countUniqueIPs, but on our array.
+        return countUniqueByIP(byStatus);
     }
 
     public HashMap<String, Integer> countVisitsPerIP () {
@@ -70,7 +133,7 @@ public class LogAnalyzer
     public HashMap<String, ArrayList<String>> iPsForDays () {
         HashMap<String, ArrayList<String>> forDays = new HashMap<String, ArrayList<String>>();
         for (LogEntry le : records) {
-            String mmm_dd = le.getAccessTime().toString().substring(4,10);
+            String mmm_dd = getMMMDD(le);
             // ArrayList.add() returns a success/fail code instead of itself, so we cannot
             // chain calls thru it.
             //forDays.put(mmm_dd, forDays.getOrDefault(mmm_dd, new ArrayList<String>()).add(le.getIpAddress()));
