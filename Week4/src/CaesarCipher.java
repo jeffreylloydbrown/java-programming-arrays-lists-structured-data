@@ -31,6 +31,7 @@ public class CaesarCipher {
     }
     
     private String transform(String input, String from, String to){
+        if (input == null || input.isEmpty()) return "";
         StringBuilder sb = new StringBuilder(input);
         for (int i = 0; i < sb.length(); i++) {
             char c = sb.charAt(i);
