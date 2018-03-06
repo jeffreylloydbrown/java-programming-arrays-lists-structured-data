@@ -12,8 +12,9 @@ public class CaesarCracker {
     }
     
     public int[] countLetters(String message){
-        String alph = "abcdefghijklmnopqrstuvwxyz";
         int[] counts = new int[26];
+        if (message == null || message.isEmpty()) return counts;
+        String alph = "abcdefghijklmnopqrstuvwxyz";
         for(int k=0; k < message.length(); k++){
             int dex = alph.indexOf(Character.toLowerCase(message.charAt(k)));
             if (dex != -1){
@@ -24,6 +25,7 @@ public class CaesarCracker {
     }
     
     public int maxIndex(int[] vals){
+        // vals cannot be null since it isn't an object.
         int maxDex = 0;
         for(int k=0; k < vals.length; k++){
             if (vals[k] > vals[maxDex]){
@@ -34,6 +36,7 @@ public class CaesarCracker {
     }
 
     public int getKey(String encrypted){
+        if (encrypted == null || encrypted.isEmpty()) return -1;
         int[] freqs = countLetters(encrypted);
         int maxDex = maxIndex(freqs);
         int mostCommonPos = mostCommon - 'a';
