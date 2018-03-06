@@ -1,6 +1,8 @@
 import edu.duke.FileResource;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class VigenereBreakerTest {
@@ -52,6 +54,17 @@ class VigenereBreakerTest {
         System.out.println("Select test/data/athens_keyflute.txt for this");
         VigenereBreaker vb = new VigenereBreaker();
         vb.breakVigenere();
+    }
+
+    @Test
+    void practiceQuizKnownLangKnownLength() {
+        VigenereBreaker vb = new VigenereBreaker();
+        String encrypted = new FileResource("test/data/secretmessage1.txt").asString();
+        int[] key = vb.tryKeyLength(encrypted, 4, 'e');
+        System.out.println("Q1.  "+ Arrays.toString(key));
+        VigenereCipher vc = new VigenereCipher(key);
+        System.out.println("Q2 answer is the first line shown here");
+        System.out.println(vc.decrypt(encrypted).substring(0, 240));
     }
 
 }

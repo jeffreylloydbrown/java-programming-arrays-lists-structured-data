@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeee0722-cee7-4bd0-bff9-cb23cede3892" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VigenereBreaker.java" afterPath="$PROJECT_DIR$/src/VigenereBreaker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/VigenereBreakerTest.java" afterPath="$PROJECT_DIR$/test/VigenereBreakerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,7 +34,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VigenereBreaker.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VigenereBreaker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -45,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VigenereBreakerTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VigenereBreakerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
+            <state relative-caret-position="508">
+              <caret line="66" column="68" lean-forward="false" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -58,7 +57,7 @@
       <file leaf-file-name="VigenereCipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VigenereCipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="442">
               <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
               <folding />
             </state>
@@ -68,7 +67,7 @@
       <file leaf-file-name="VigenereCipherTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/VigenereCipherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="408">
               <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding />
             </state>
@@ -133,8 +132,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,8 +159,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VigenereBreakerTest">
+  <component name="RunManager" selected="JUnit.VigenereBreakerTest.practiceQuizKnownLangKnownLength">
     <configuration name="VigenereBreakerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -232,6 +231,31 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VigenereBreakerTest" />
       <option name="METHOD_NAME" value="breakVigenere" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="VigenereBreakerTest.practiceQuizKnownLangKnownLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="VigenereBreaker" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Week4" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VigenereBreakerTest" />
+      <option name="METHOD_NAME" value="practiceQuizKnownLangKnownLength" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
@@ -283,31 +307,6 @@
       <option name="MAIN_CLASS_NAME" value="VigenereCipherTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="VigenereCipherTest.decrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="VigenereCipher" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Week4" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VigenereCipherTest" />
-      <option name="METHOD_NAME" value="decrypt" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
@@ -401,18 +400,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.decrypt" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.tryKeyLength" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakVigenere" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.tryKeyLength" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakVigenere" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.practiceQuizKnownLangKnownLength" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakVigenere" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.tryKeyLength" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.decrypt" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.practiceQuizKnownLangKnownLength" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakVigenere" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.tryKeyLength" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest" />
       </list>
     </recent_temporary>
   </component>
@@ -435,13 +434,10 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VigenereBreakerTest - 2018.03.05 at 23h 24m 26s.xml">
-      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VigenereBreakerTest - 2018.03.05 at 23h 29m 52s.xml">
-      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VigenereBreakerTest - 2018.03.05 at 23h 30m 43s.xml">
+      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VigenereBreakerTest - 2018.03.05 at 23h 44m 17s.xml">
       <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VigenereBreakerTest_breakVigenere - 2018.03.05 at 23h 27m 41s.xml">
@@ -449,6 +445,9 @@
     </history-entry>
     <history-entry file="VigenereBreakerTest_breakVigenere - 2018.03.05 at 23h 29m 38s.xml">
       <configuration name="VigenereBreakerTest.breakVigenere" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VigenereBreakerTest_practiceQuizKnownLangKnownLength - 2018.03.05 at 23h 44m 44s.xml">
+      <configuration name="VigenereBreakerTest.practiceQuizKnownLangKnownLength" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VigenereBreakerTest_tryKeyLength - 2018.03.05 at 23h 22m 28s.xml">
       <configuration name="VigenereBreakerTest.tryKeyLength" configurationId="JUnit" />
@@ -472,7 +471,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -480,7 +479,6 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8333333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -496,6 +494,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -543,26 +542,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
+    <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="867">
+          <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CaesarCipherTest.java">
+    <entry file="file://$PROJECT_DIR$/src/VigenereCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding>
-            <element signature="e#983#984#0" expanded="false" />
-            <element signature="e#1050#1051#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/data/titus-small.txt">
+    <entry file="file://$PROJECT_DIR$/test/VigenereCipherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -570,11 +574,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CaesarCipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CaesarCipherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/data/titus-small.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CaesarCracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -582,13 +606,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/VigenereCipherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="408">
           <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding />
         </state>
@@ -596,16 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/VigenereCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="442">
           <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="76" selection-end-line="51" selection-end-column="76" />
           <folding />
         </state>
       </provider>
@@ -614,6 +629,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="66" column="68" lean-forward="false" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
           <folding />
         </state>
       </provider>
