@@ -24,7 +24,7 @@
     <SUITE FILE_PATH="coverage/Week4$CaesarCipherTest.coverage" NAME="CaesarCipherTest Coverage Results" MODIFIED="1520297578337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CaesarCipher</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Week4$VigenereBreakerTest.coverage" NAME="VigenereBreakerTest Coverage Results" MODIFIED="1520314230736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Week4$VigenereBreakerTest.coverage" NAME="VigenereBreakerTest Coverage Results" MODIFIED="1520370305293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>VigenereBreaker</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Week4$VigenereBreakerTest_breakVigenere.coverage" NAME="VigenereBreakerTest.breakVigenere Coverage Results" MODIFIED="1520314170846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -39,11 +39,9 @@
       <file leaf-file-name="VigenereBreaker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="37" column="45" lean-forward="false" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-              <folding>
-                <element signature="e#1513#1521#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="296">
+              <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,58 +49,8 @@
       <file leaf-file-name="VigenereBreakerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="59" column="90" lean-forward="false" selection-start-line="59" selection-start-column="90" selection-end-line="59" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="English" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dictionaries/English">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1240960">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dutch" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dictionaries/Dutch">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="341663" column="6" lean-forward="false" selection-start-line="341663" selection-start-column="0" selection-end-line="341663" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Italian" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dictionaries/Italian">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="116877" column="12" lean-forward="false" selection-start-line="116877" selection-start-column="0" selection-end-line="116877" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VigenereCipher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/VigenereCipher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VigenereCipherTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/VigenereCipherTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="326">
+              <caret line="78" column="60" lean-forward="false" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -166,6 +114,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,10 +149,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VigenereBreakerTest.readDictionary">
+  <component name="RunManager" selected="JUnit.VigenereBreakerTest">
     <configuration name="VigenereBreakerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -447,8 +395,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.readDictionary" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.readDictionary" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.practiceQuizKnownLangKnownLength" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakVigenere" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.tryKeyLength" />
@@ -474,19 +422,19 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VigenereBreakerTest - 2018.03.06 at 13h 56m 18s.xml">
+    <history-entry file="VigenereBreakerTest - 2018.03.06 at 15h 04m 58s.xml">
       <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VigenereBreakerTest_breakVigenere - 2018.03.05 at 23h 29m 38s.xml">
-      <configuration name="VigenereBreakerTest.breakVigenere" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VigenereBreakerTest_practiceQuizKnownLangKnownLength - 2018.03.05 at 23h 44m 44s.xml">
-      <configuration name="VigenereBreakerTest.practiceQuizKnownLangKnownLength" configurationId="JUnit" />
+    <history-entry file="VigenereBreakerTest - 2018.03.06 at 15h 05m 12s.xml">
+      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VigenereBreakerTest_readDictionary - 2018.03.06 at 13h 57m 14s.xml">
       <configuration name="VigenereBreakerTest.readDictionary" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VigenereBreakerTest_readDictionary - 2018.03.06 at 13h 57m 39s.xml">
+      <configuration name="VigenereBreakerTest.readDictionary" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VigenereBreakerTest_readDictionary - 2018.03.06 at 14h 58m 12s.xml">
       <configuration name="VigenereBreakerTest.readDictionary" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VigenereBreakerTest_tryKeyLength - 2018.03.05 at 23h 22m 28s.xml">
@@ -518,10 +466,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8333333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -533,7 +482,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -576,10 +524,64 @@
     <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
+          <caret line="37" column="45" lean-forward="false" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionaries/English">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionaries/Dutch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5808271">
+          <caret line="341663" column="6" lean-forward="false" selection-start-line="341663" selection-start-column="0" selection-end-line="341663" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dictionaries/Italian">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1986909">
+          <caret line="116877" column="12" lean-forward="false" selection-start-line="116877" selection-start-column="0" selection-end-line="116877" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VigenereCipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/VigenereCipherTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="90" lean-forward="false" selection-start-line="59" selection-start-column="90" selection-end-line="59" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#1513#1521#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -611,9 +613,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1513#1521#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -645,9 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1513#1521#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -702,19 +700,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="37" column="45" lean-forward="false" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-          <folding>
-            <element signature="e#1513#1521#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dictionaries/Italian">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="1986909">
           <caret line="116877" column="12" lean-forward="false" selection-start-line="116877" selection-start-column="0" selection-end-line="116877" selection-end-column="12" />
           <folding />
         </state>
@@ -722,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictionaries/English">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1240960">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -730,16 +718,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictionaries/Dutch">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
+        <state relative-caret-position="5808271">
           <caret line="341663" column="6" lean-forward="false" selection-start-line="341663" selection-start-column="0" selection-end-line="341663" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="59" column="90" lean-forward="false" selection-start-line="59" selection-start-column="90" selection-end-line="59" selection-end-column="90" />
+        <state relative-caret-position="326">
+          <caret line="78" column="60" lean-forward="false" selection-start-line="78" selection-start-column="60" selection-end-line="78" selection-end-column="60" />
           <folding />
         </state>
       </provider>

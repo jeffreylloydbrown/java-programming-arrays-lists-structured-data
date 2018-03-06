@@ -34,9 +34,23 @@ public class VigenereBreaker {
 
     public HashSet<String> readDictionary (FileResource fr) {
         HashSet<String> dictionary = new HashSet<String>();
-        for (String word : fr.asString().split("\\W"))
+        for (String word : fr.words())
             dictionary.add(word.toLowerCase());
         return dictionary;
+    }
+
+    public int countWords (String message, HashSet<String> dictionary) {
+        // verify parameters.
+        if (message == null || message.isEmpty()) return 0;
+        if (dictionary == null || dictionary.isEmpty()) return 0;
+
+        // count the words.
+        int count = 0;
+        for (String word : message.split("\\W")) {
+            if (dictionary.contains(word.toLowerCase()))
+                count += 1;
+        }
+        return count;
     }
 
     public void breakVigenere () {

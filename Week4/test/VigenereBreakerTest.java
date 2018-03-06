@@ -53,13 +53,30 @@ class VigenereBreakerTest {
     @Test
     void readDictionary() {
         VigenereBreaker vb = new VigenereBreaker();
+        // Checking dictionaries that start and end with no special characters.  English ends with
+        // accented e words, so can't use that.  I don't want to figure out special characters.
         HashSet<String> italian = vb.readDictionary(new FileResource("src/dictionaries/Italian"));
         assertTrue(italian.contains("achille"));        // first word in file
         assertTrue(italian.contains("zuzzurellone"));   // last word in file
 
         HashSet<String> dutch = vb.readDictionary(new FileResource("src/dictionaries/Dutch"));
-        assertTrue(dutch.contains("a"));
-        assertTrue(dutch.contains("keesje"));
+        assertTrue(dutch.contains("a"));                // first word in file
+        assertTrue(dutch.contains("keesje"));           // last word in file
+    }
+
+    @Test
+    void countWords () {
+        VigenereBreaker vb = new VigenereBreaker();
+        HashSet<String> english = vb.readDictionary(new FileResource("src/dictionaries/English"));
+        assertEquals(1, vb.countWords("a", english));
+        assertEquals(2, vb.countWords("COUNT WordS", english));
+        assertEquals(0, vb.countWords("#@@#$ $#@ @@", english));
+        assertEquals(16 , vb.countWords("Now is the time for all good people to come to the aid of their country", english));
+
+        assertEquals(0, vb.countWords("", english));
+        assertEquals(0, vb.countWords(null, english));
+        assertEquals(0, vb.countWords("valid words", new HashSet<String>()));
+        assertEquals(0, vb.countWords("valid words", null));
     }
 
     @Test
