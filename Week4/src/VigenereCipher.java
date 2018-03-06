@@ -12,6 +12,7 @@ public class VigenereCipher {
     }
     
     public String encrypt(String input) {
+        if (input == null || input.isEmpty()) return "";
         StringBuilder answer = new StringBuilder();
         int i = 0;
         for (char c : input.toCharArray()) {
@@ -24,6 +25,7 @@ public class VigenereCipher {
     }
     
     public String decrypt(String input) {
+        if (input == null || input.isEmpty()) return "";
         StringBuilder answer = new StringBuilder();
         int i = 0;
         for (char c : input.toCharArray()) {
