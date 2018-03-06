@@ -21,14 +21,22 @@ public class VigenereBreaker {
         if (encrypted == null || encrypted.isEmpty()) return error;
         if (klength < 1) return error;
 
-        //
+        // For each spot in the key, create a slice from the encrypted text,
+        // and crack it to get the key it used.  Put that key into the key array.
         int[] key = new int[klength];
-        //WRITE YOUR CODE HERE
+        CaesarCracker cracker = new CaesarCracker(mostCommon);
+        for (int slice = 0; slice < key.length; slice++) {
+            String thisSlice = sliceString(encrypted, slice, klength);
+            key[slice] = cracker.getKey(thisSlice);
+        }
         return key;
     }
 
     public void breakVigenere () {
-        //WRITE YOUR CODE HERE
+        String encrypted = new FileResource().asString();
+        int[] key = tryKeyLength(encrypted, 5, 'e');
+        VigenereCipher cipher = new VigenereCipher(key);
+        System.out.println(cipher.decrypt(encrypted));
     }
-    
+
 }

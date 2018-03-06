@@ -1,3 +1,4 @@
+import edu.duke.FileResource;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -26,6 +27,13 @@ class VigenereBreakerTest {
         assertEquals(letters, vb.sliceString(letters,0, -1));
     }
 
+    private int[] stringToKey (String keyText) {
+        int[] key = new int[keyText.length()];
+        for (int k = 0; k < key.length; k++)
+            key[k] = keyText.charAt(k) - 'a';
+        return key;
+    }
+
     @Test
     void tryKeyLength () {
         int[] error = {-1};
@@ -33,10 +41,17 @@ class VigenereBreakerTest {
         assertArrayEquals(error, vb.tryKeyLength("", 2, 'f'));
         assertArrayEquals(error, vb.tryKeyLength(null, 2, 'f'));
         assertArrayEquals(error, vb.tryKeyLength("asrrd", 0, 'q'));
+
+        String encrypted = new FileResource("test/data/athens_keyflute.txt").asString();
+        int[] key = stringToKey("flute");
+        assertArrayEquals(key, vb.tryKeyLength(encrypted, key.length, 'e'));
     }
 
     @Test
     void breakVigenere () {
+        System.out.println("Select test/data/athens_keyflute.txt for this");
+        VigenereBreaker vb = new VigenereBreaker();
+        vb.breakVigenere();
     }
 
 }
