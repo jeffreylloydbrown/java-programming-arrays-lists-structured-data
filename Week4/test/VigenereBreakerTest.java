@@ -2,6 +2,7 @@ import edu.duke.FileResource;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -47,6 +48,18 @@ class VigenereBreakerTest {
         String encrypted = new FileResource("test/data/athens_keyflute.txt").asString();
         int[] key = stringToKey("flute");
         assertArrayEquals(key, vb.tryKeyLength(encrypted, key.length, 'e'));
+    }
+
+    @Test
+    void readDictionary() {
+        VigenereBreaker vb = new VigenereBreaker();
+        HashSet<String> italian = vb.readDictionary(new FileResource("src/dictionaries/Italian"));
+        assertTrue(italian.contains("achille"));        // first word in file
+        assertTrue(italian.contains("zuzzurellone"));   // last word in file
+
+        HashSet<String> dutch = vb.readDictionary(new FileResource("src/dictionaries/Dutch"));
+        assertTrue(dutch.contains("a"));
+        assertTrue(dutch.contains("keesje"));
     }
 
     @Test

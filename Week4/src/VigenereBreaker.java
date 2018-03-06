@@ -30,6 +30,13 @@ public class VigenereBreaker {
             key[slice] = cracker.getKey(thisSlice);
         }
         return key;
+    }  // tryKeyLength
+
+    public HashSet<String> readDictionary (FileResource fr) {
+        HashSet<String> dictionary = new HashSet<String>();
+        for (String word : fr.asString().split("\\W"))
+            dictionary.add(word.toLowerCase());
+        return dictionary;
     }
 
     public void breakVigenere () {
@@ -39,4 +46,4 @@ public class VigenereBreaker {
         System.out.println(cipher.decrypt(encrypted));
     }
 
-}
+}  // VigenereBreaker
