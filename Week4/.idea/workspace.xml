@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeee0722-cee7-4bd0-bff9-cb23cede3892" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/VigenereCipherTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/VigenereBreakerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VigenereCipher.java" afterPath="$PROJECT_DIR$/src/VigenereCipher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VigenereBreaker.java" afterPath="$PROJECT_DIR$/src/VigenereBreaker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,17 +21,30 @@
     <SUITE FILE_PATH="coverage/Week4$CaesarCipherTest.coverage" NAME="CaesarCipherTest Coverage Results" MODIFIED="1520297578337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CaesarCipher</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Week4$VigenereBreakerTest.coverage" NAME="VigenereBreakerTest Coverage Results" MODIFIED="1520312455670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>VigenereBreaker</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Week4$VigenereCipherTest.coverage" NAME="VigenereCipherTest Coverage Results" MODIFIED="1520311416991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>VigenereCipher</FILTER>
     </SUITE>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VigenereBreaker.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VigenereBreaker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VigenereBreakerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="11" column="60" lean-forward="true" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -47,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VigenereCipherTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VigenereCipherTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/VigenereCipherTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -88,6 +101,8 @@
         <option value="$PROJECT_DIR$/test/CaesarCrackerTest.java" />
         <option value="$PROJECT_DIR$/src/VigenereCipher.java" />
         <option value="$PROJECT_DIR$/test/VigenereCipherTest.java" />
+        <option value="$PROJECT_DIR$/src/VigenereBreaker.java" />
+        <option value="$PROJECT_DIR$/test/VigenereBreakerTest.java" />
       </list>
     </option>
   </component>
@@ -173,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VigenereCipherTest">
+  <component name="RunManager" selected="JUnit.VigenereBreakerTest">
     <configuration name="CaesarCrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -199,10 +214,10 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CaesarCrackerTest.decrypt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VigenereBreakerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="CaesarCracker" />
+          <option name="PATTERN" value="VigenereBreaker" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -210,9 +225,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CaesarCrackerTest" />
-      <option name="METHOD_NAME" value="decrypt" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="VigenereBreakerTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
@@ -376,18 +391,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.CaesarCrackerTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CaesarCrackerTest.decrypt" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.encrypt" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.decrypt" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.encrypt" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.decrypt" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.decrypt" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.encrypt" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CaesarCrackerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CaesarCrackerTest.decrypt" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.decrypt" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereCipherTest.encrypt" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CaesarCrackerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -410,20 +425,20 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VigenereCipherTest - 2018.03.05 at 22h 39m 31s.xml">
-      <configuration name="VigenereCipherTest" configurationId="JUnit" />
+    <history-entry file="VigenereBreakerTest - 2018.03.05 at 22h 57m 33s.xml">
+      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VigenereCipherTest - 2018.03.05 at 22h 39m 36s.xml">
-      <configuration name="VigenereCipherTest" configurationId="JUnit" />
+    <history-entry file="VigenereBreakerTest - 2018.03.05 at 22h 59m 48s.xml">
+      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VigenereCipherTest - 2018.03.05 at 22h 39m 55s.xml">
-      <configuration name="VigenereCipherTest" configurationId="JUnit" />
+    <history-entry file="VigenereBreakerTest - 2018.03.05 at 23h 00m 28s.xml">
+      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VigenereCipherTest - 2018.03.05 at 22h 41m 14s.xml">
-      <configuration name="VigenereCipherTest" configurationId="JUnit" />
+    <history-entry file="VigenereBreakerTest - 2018.03.05 at 23h 00m 35s.xml">
+      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VigenereCipherTest - 2018.03.05 at 22h 41m 29s.xml">
-      <configuration name="VigenereCipherTest" configurationId="JUnit" />
+    <history-entry file="VigenereBreakerTest - 2018.03.05 at 23h 00m 57s.xml">
+      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VigenereCipherTest - 2018.03.05 at 22h 42m 39s.xml">
       <configuration name="VigenereCipherTest" configurationId="JUnit" />
@@ -437,8 +452,8 @@
     <history-entry file="VigenereCipherTest - 2018.03.05 at 22h 43m 38s.xml">
       <configuration name="VigenereCipherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VigenereCipherTest_decrypt - 2018.03.05 at 22h 40m 51s.xml">
-      <configuration name="VigenereCipherTest.decrypt" configurationId="JUnit" />
+    <history-entry file="VigenereCipherTest - 2018.03.05 at 22h 57m 22s.xml">
+      <configuration name="VigenereCipherTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -455,7 +470,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -533,14 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/VigenereCipher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -553,6 +560,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="60" lean-forward="true" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VigenereBreaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding />
         </state>
       </provider>
