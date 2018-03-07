@@ -65,8 +65,9 @@ public class VigenereBreaker {
         int bestCount = 0;
 
         // Try various key lengths, see which gives most words in dictionary.
+        char mostCommon = mostCommonCharIn(dictionary);
         for (int klength = 1; klength < maxKeyLength; klength++) {
-            int[] key = tryKeyLength(encrypted, klength, 'e');
+            int[] key = tryKeyLength(encrypted, klength, mostCommon);
             String decrypt = new VigenereCipher(key).decrypt(encrypted);
             int count = countWords(decrypt, dictionary);
             if (count > bestCount) {
@@ -77,6 +78,35 @@ public class VigenereBreaker {
 
         return bestDecrypt;
     }  // breakForLanguage
+
+    private char maxValueKey (HashMap<Character, Integer> map) {
+        char maxKey = ' ';
+        int maxValue = -1;
+        for (char c : map.keySet()) {
+            if (map.get(c) > map.getOrDefault(maxKey, 0)) {
+                maxKey = c;
+                maxValue = map.get(c);
+            }
+        }
+        return maxKey;
+    }
+
+    public char mostCommonCharIn (HashSet<String> dictionary) {
+        // Verify parameters.  Prefer to throw, but can't so return a char not in the alphabet.
+        if (dictionary == null || dictionary.isEmpty()) return ' ';
+
+        // Use the alphabet to decide which characters to count.
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        HashMap<Character, Integer> counts = new HashMap<Character, Integer>();
+        for (String word : dictionary) {
+            for (char c : word.toCharArray()) {
+                if (alphabet.indexOf(c) != -1) {
+                    counts.put(c, counts.getOrDefault(c, 0) + 1);
+                }
+            }
+        }
+        return maxValueKey(counts);
+    }  // mostCommonCharIn
 
     public void breakVigenere () {
         String encrypted = new FileResource().asString();

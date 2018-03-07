@@ -2,6 +2,7 @@ import edu.duke.FileResource;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -95,6 +96,21 @@ class VigenereBreakerTest {
         assertEquals(0, vb.countWords(null, english));
         assertEquals(0, vb.countWords(encrypted, new HashSet<String>()));
         assertEquals(0, vb.countWords(encrypted, null));
+    }
+
+    @Test
+    void mostCommonCharIn () {
+        VigenereBreaker vb = new VigenereBreaker();
+        // The assignment says English, French, Danish, German, and Dutch
+        // all have 'e' as the most common character.
+        String[] langs = {"English", "French", "Danish", "German", "Dutch"};
+        for (String lang : langs) {
+            HashSet<String> dict = vb.readDictionary(new FileResource("src/dictionaries/"+lang));
+            assertEquals('e', vb.mostCommonCharIn(dict));
+        }
+
+        assertEquals(' ', vb.mostCommonCharIn(new HashSet<String>()));
+        assertEquals(' ', vb.mostCommonCharIn(null));
     }
 
     @Test
