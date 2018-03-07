@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeee0722-cee7-4bd0-bff9-cb23cede3892" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VigenereBreaker.java" afterPath="$PROJECT_DIR$/src/VigenereBreaker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/VigenereBreakerTest.java" afterPath="$PROJECT_DIR$/test/VigenereBreakerTest.java" />
-    </list>
+    <list default="true" id="aeee0722-cee7-4bd0-bff9-cb23cede3892" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +20,7 @@
     <SUITE FILE_PATH="coverage/Week4$CaesarCipherTest.coverage" NAME="CaesarCipherTest Coverage Results" MODIFIED="1520297578337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>CaesarCipher</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Week4$VigenereBreakerTest.coverage" NAME="VigenereBreakerTest Coverage Results" MODIFIED="1520397063337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Week4$VigenereBreakerTest.coverage" NAME="VigenereBreakerTest Coverage Results" MODIFIED="1520397522053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>VigenereBreaker</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Week4$VigenereBreakerTest_breakVigenere.coverage" NAME="VigenereBreakerTest.breakVigenere Coverage Results" MODIFIED="1520314170846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -51,7 +48,7 @@
       <file leaf-file-name="VigenereBreakerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="-589">
               <caret line="146" column="68" lean-forward="true" selection-start-line="146" selection-start-column="68" selection-end-line="146" selection-end-column="68" />
               <folding>
                 <element signature="e#5376#5401#0" expanded="true" />
@@ -395,8 +392,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakVigenere" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakForLanguage" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakForLanguage" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.breakForAllLangs" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.VigenereBreakerTest.mostCommonCharIn" />
       </list>
@@ -421,17 +418,11 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VigenereBreakerTest - 2018.03.06 at 22h 29m 20s.xml">
-      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VigenereBreakerTest - 2018.03.06 at 22h 31m 25s.xml">
       <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VigenereBreakerTest_breakForAllLangs - 2018.03.06 at 22h 29m 40s.xml">
-      <configuration name="VigenereBreakerTest.breakForAllLangs" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VigenereBreakerTest_breakForLanguage - 2018.03.06 at 22h 28m 37s.xml">
-      <configuration name="VigenereBreakerTest.breakForLanguage" configurationId="JUnit" />
+    <history-entry file="VigenereBreakerTest - 2018.03.06 at 22h 39m 05s.xml">
+      <configuration name="VigenereBreakerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VigenereBreakerTest_breakForLanguage - 2018.03.06 at 22h 34m 34s.xml">
       <configuration name="VigenereBreakerTest.breakForLanguage" configurationId="JUnit" />
@@ -451,10 +442,15 @@
     <history-entry file="VigenereBreakerTest_breakVigenere - 2018.03.06 at 22h 37m 18s.xml">
       <configuration name="VigenereBreakerTest.breakVigenere" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VigenereBreakerTest_breakVigenere - 2018.03.06 at 22h 39m 56s.xml">
+      <configuration name="VigenereBreakerTest.breakVigenere" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VigenereBreakerTest_breakVigenere - 2018.03.06 at 22h 41m 08s.xml">
+      <configuration name="VigenereBreakerTest.breakVigenere" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -464,9 +460,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8333333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -798,7 +794,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/VigenereBreakerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="-589">
           <caret line="146" column="68" lean-forward="true" selection-start-line="146" selection-start-column="68" selection-end-line="146" selection-end-column="68" />
           <folding>
             <element signature="e#5376#5401#0" expanded="true" />

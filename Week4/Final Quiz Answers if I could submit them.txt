@@ -1,0 +1,10 @@
+1.  French
+2.  La chambre à coucher de Juliette.
+3.  German
+4.  Drei Hexen treten auf.
+5.  (guess on my part) Exactly the message length.
+6.  
+	- the language of the original message has multiple letters of comparable high frequency.
+	- the language of the original message has many characters not in the English alphabet.
+	- the language of the original message is not included in the dictionaries.
+7.  The key length is long compared with the message.
