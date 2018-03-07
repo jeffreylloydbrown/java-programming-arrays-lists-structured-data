@@ -53,6 +53,31 @@ public class VigenereBreaker {
         return count;
     }
 
+    public String breakForLanguage (String encrypted, HashSet<String> dictionary) {
+        //int maxKeyLength = encrypted.length();
+        int maxKeyLength = 101;
+        // verify parameters.
+        if (encrypted == null || encrypted.isEmpty()) return "";
+        if (dictionary == null || dictionary.isEmpty()) return "";
+
+        // Need to remember the decrypt with the most words in the dictionary.
+        String bestDecrypt = "";
+        int bestCount = 0;
+
+        // Try various key lengths, see which gives most words in dictionary.
+        for (int klength = 1; klength < maxKeyLength; klength++) {
+            int[] key = tryKeyLength(encrypted, klength, 'e');
+            String decrypt = new VigenereCipher(key).decrypt(encrypted);
+            int count = countWords(decrypt, dictionary);
+            if (count > bestCount) {
+                bestCount = count;
+                bestDecrypt = decrypt;
+            }
+        }
+
+        return bestDecrypt;
+    }  // breakForLanguage
+
     public void breakVigenere () {
         String encrypted = new FileResource().asString();
         int[] key = tryKeyLength(encrypted, 5, 'e');

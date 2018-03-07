@@ -80,6 +80,24 @@ class VigenereBreakerTest {
     }
 
     @Test
+    void breakForLanguage() {
+        VigenereBreaker vb = new VigenereBreaker();
+        HashSet<String> english = vb.readDictionary(new FileResource("src/dictionaries/English"));
+
+        // Decrypt athens_keyflute.txt, compare it to its original.  They must match.
+        String encrypted = new FileResource("test/data/athens_keyflute.txt").asString();
+        String clearText = new FileResource("test/data/athens.txt").asString();
+        String decrypted = vb.breakForLanguage(encrypted, english);
+        assertEquals(clearText, decrypted);
+
+        // degenerate cases to confirm null safety
+        assertEquals(0, vb.countWords("", english));
+        assertEquals(0, vb.countWords(null, english));
+        assertEquals(0, vb.countWords(encrypted, new HashSet<String>()));
+        assertEquals(0, vb.countWords(encrypted, null));
+    }
+
+    @Test
     void breakVigenere () {
         System.out.println("Select test/data/athens_keyflute.txt for this");
         VigenereBreaker vb = new VigenereBreaker();
