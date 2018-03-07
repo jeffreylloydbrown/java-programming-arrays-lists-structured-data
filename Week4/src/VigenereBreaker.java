@@ -108,10 +108,42 @@ public class VigenereBreaker {
         return maxValueKey(counts);
     }  // mostCommonCharIn
 
+    public void breakForAllLangs (String encrypted, HashMap<String, HashSet<String>> languages) {
+        if (encrypted == null || encrypted.isEmpty()) return;
+        if (languages == null || languages.isEmpty()) return;
+
+        int bestCount = 0;
+        String bestLanguage = "";
+        String bestDecrypt = "";
+        for (String lang : languages.keySet()) {
+            HashSet<String> dictionary = languages.get(lang);
+            String decrypted = breakForLanguage(encrypted, dictionary);
+            int count = countWords(decrypted, dictionary);
+            if (count > bestCount) {
+                bestCount = count;
+                bestLanguage = lang;
+                bestDecrypt = decrypted;
+            }
+        }
+
+        System.out.println("Message in "+bestLanguage+":");
+        System.out.println(bestDecrypt);
+        System.out.println("----END----\n");
+    }  // breakForAllLangs
+
+    private HashMap<String, HashSet<String>> loadDictionaries() {
+        String[] langs = {"Danish", "Dutch", "English", "French", "German", "Italian", "Portuguese", "Spanish"};
+        HashMap<String, HashSet<String>> dictionaries = new HashMap<String, HashSet<String>>();
+        for (String lang : langs) {
+            dictionaries.put(lang, readDictionary(new FileResource("src/dictionaries/"+lang)));
+        }
+        return dictionaries;
+    }
+
     public void breakVigenere () {
         String encrypted = new FileResource().asString();
-        HashSet<String> english = readDictionary(new FileResource("src/dictionaries/English"));
-        System.out.println(breakForLanguage(encrypted, english));
+        HashMap<String, HashSet<String>> dictionaries = loadDictionaries();
+        breakForAllLangs(encrypted, dictionaries);
     }
 
 }  // VigenereBreaker

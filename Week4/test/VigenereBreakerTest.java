@@ -1,3 +1,4 @@
+import edu.duke.DirectoryResource;
 import edu.duke.FileResource;
 import org.junit.jupiter.api.Test;
 
@@ -111,6 +112,34 @@ class VigenereBreakerTest {
 
         assertEquals(' ', vb.mostCommonCharIn(new HashSet<String>()));
         assertEquals(' ', vb.mostCommonCharIn(null));
+    }
+
+    private HashMap<String, HashSet<String>> loadDictionaries(VigenereBreaker vb) {
+        String[] langs = {"Danish", "Dutch", "English", "French", "German", "Italian", "Portuguese", "Spanish"};
+        HashMap<String, HashSet<String>> dictionaries = new HashMap<String, HashSet<String>>();
+        for (String lang : langs) {
+            dictionaries.put(lang, vb.readDictionary(new FileResource("src/dictionaries/"+lang)));
+        }
+        return dictionaries;
+    }
+
+    @Test
+    void breakForAllLangs () {
+        VigenereBreaker vb = new VigenereBreaker();
+        String encrypted = new FileResource("test/data/aida_keyverdi.txt").asString();
+        HashMap<String, HashSet<String>> dictionaries = loadDictionaries(vb);
+        System.out.println("degenerate cases, no lines printed");
+        vb.breakForAllLangs("", dictionaries);
+        vb.breakForAllLangs(null, dictionaries);
+        vb.breakForAllLangs(encrypted, new HashMap<String, HashSet<String>>());
+        vb.breakForAllLangs(encrypted, null);
+        System.out.println("end of degenerate cases");
+        System.out.println("Language should be Italian");
+        vb.breakForAllLangs(encrypted, dictionaries);
+
+        encrypted = new FileResource("test/data/oslusiadas_key17.txt").asString();
+        System.out.println("Language should be Portuguese");
+        vb.breakForAllLangs(encrypted, dictionaries);
     }
 
     @Test
