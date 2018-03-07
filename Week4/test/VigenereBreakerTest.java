@@ -115,4 +115,37 @@ class VigenereBreakerTest {
         System.out.println(vc.decrypt(encrypted).substring(0, 240));
     }
 
+    @Test
+    void practiceQuizKnownLangUnknownLength() {
+        VigenereBreaker vb = new VigenereBreaker();
+        String encrypted = new FileResource("test/data/secretmessage2.txt").asString();
+        HashSet<String> english = vb.readDictionary(new FileResource("src/dictionaries/English"));
+        //String decrypted = vb.breakForLanguage(encrypted, english);
+
+        // Need to remember the decrypt with the most words in the dictionary.
+        String bestDecrypt = "";
+        int bestCount = 0;
+        int bestKeyLength = 0;
+
+        // Try various key lengths, see which gives most words in dictionary.
+        for (int klength = 1; klength < 100; klength++) {
+            int[] key = vb.tryKeyLength(encrypted, klength, 'e');
+            String decrypt = new VigenereCipher(key).decrypt(encrypted);
+            int count = vb.countWords(decrypt, english);
+            if (count > bestCount) {
+                bestCount = count;
+                bestDecrypt = decrypt;
+                bestKeyLength = klength;
+            }
+        }
+
+        System.out.println("Q1. "+bestKeyLength);
+        System.out.println("Q2. "+bestCount);
+        System.out.println("Q3.  Answer is the first line of the following");
+        System.out.println(bestDecrypt.substring(0, 120));
+        int[] key38 = vb.tryKeyLength(encrypted, 38, 'e');
+        String decrypt38 = new VigenereCipher(key38).decrypt(encrypted);
+        System.out.println("Q4. "+vb.countWords(decrypt38, english));
+    }
+
 }

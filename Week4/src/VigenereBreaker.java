@@ -80,9 +80,8 @@ public class VigenereBreaker {
 
     public void breakVigenere () {
         String encrypted = new FileResource().asString();
-        int[] key = tryKeyLength(encrypted, 5, 'e');
-        VigenereCipher cipher = new VigenereCipher(key);
-        System.out.println(cipher.decrypt(encrypted));
+        HashSet<String> english = readDictionary(new FileResource("src/dictionaries/English"));
+        System.out.println(breakForLanguage(encrypted, english));
     }
 
 }  // VigenereBreaker
